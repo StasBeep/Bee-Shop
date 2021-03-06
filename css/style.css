@@ -3,7 +3,14 @@
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper {
+  /*Максимальная ширина страницы и выравнивание содержимого по центру*/
+  margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
+}
+
+.wrapper-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrapper-forcontent {
@@ -37,6 +44,20 @@
     font-weight: 300;
     font-style: normal;
 }*/
+@font-face {
+  font-family: rubik;
+  src: url(../fonts/Rubik-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: rubik;
+  src: url(../fonts/Rubik-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* mixin */
 /* example:
 @mixin font-lato-normal-size-line($size-format: 400, $fonts:14px, $linehe: 17px) {
@@ -47,4 +68,96 @@
     line-height: $linehe;
 }*/
 /* index */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1164px;
+  margin: 0 auto;
+}
+
+.footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 1140px;
+  background: linear-gradient(92.55deg, #f2b236 32.31%, #ff9c1a 64.34%);
+}
+
+.footer-top-left-logo {
+  margin-top: 58px;
+  width: 265px;
+  background: #F6D799;
+  border-radius: 10px;
+}
+
+.footer-top-left-logo-text {
+  display: block;
+  padding: 27px 63px 27px 63px;
+  text-decoration: none;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 0.6em;
+  color: #FFFFFF;
+}
+
+.footer-top-left-phone {
+  margin-top: 16px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: block;
+  color: #884900;
+}
+
+.footer-top-left-email {
+  margin-top: 8px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: block;
+  color: #884900;
+}
+
+.footer-top-left-search {
+  margin-top: 45px;
+  margin-bottom: 85px;
+  width: 140px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 14px 106px 13px 20px;
+  position: relative;
+}
+
+.footer-top-left-search-input {
+  color: #A5AAAF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  outline: 0;
+  border: none;
+}
+
+.footer-top-left-search-test {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  fill: #A5AAAF;
+}
+
+.footer-top-left-search-test:hover {
+  fill: #5e6164;
+}
 /*# sourceMappingURL=style.css.map */
