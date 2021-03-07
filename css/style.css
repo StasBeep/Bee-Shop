@@ -175,14 +175,14 @@ li {
   border: none;
 }
 
-.footer-top-left-search-test {
+.footer-top-left-search-button {
   position: absolute;
   top: 13px;
   right: 15px;
   fill: #a5aaaf;
 }
 
-.footer-top-left-search-test:hover {
+.footer-top-left-search-button:hover {
   fill: #5e6164;
 }
 
@@ -209,5 +209,82 @@ li {
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
+}
+
+.footer-top-social {
+  -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.24);
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background: #90c1bf;
+  border-radius: 12px;
+  margin-right: 7px;
+  margin-top: 19px;
+}
+
+.footer-top-svg {
+  fill: #FFFFFF;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.footer-top-svg-whatsup {
+  fill: #FFFFFF;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.footer-top-svg-whatsup:hover {
+  fill: #90c1bf;
+}
+
+.footer-top-svg-whatsup:active {
+  fill: #FFFFFF;
+}
+
+.footer-top-svg-viber {
+  fill: #FFFFFF;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.footer-top-svg-viber:hover {
+  fill: #90c1bf;
+}
+
+.footer-top-svg-viber:active {
+  fill: #FFFFFF;
+}
+
+.footer-top-svg-teleg {
+  fill: #FFFFFF;
+  margin-top: 7px;
+  margin-left: 3px;
+  margin-bottom: 1px;
+}
+
+.footer-top-svg-teleg:hover {
+  fill: #90c1bf;
+}
+
+.footer-top-svg-teleg:active {
+  fill: #FFFFFF;
+}
+
+.footer-top-social:hover {
+  background: #FFFFFF;
+}
+
+.footer-top-social:active {
+  background: #90c1bf;
+}
+
+.footer-top-svg:hover {
+  fill: #90c1bf;
+}
+
+.footer-top-svg:active {
+  fill: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
