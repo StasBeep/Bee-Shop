@@ -14,6 +14,10 @@ li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .correction {
     margin-left: 300px;
 }
@@ -28,9 +32,10 @@ li {
 
 .footer {
     box-sizing: border-box;
-    min-width: 1140px;
+    width: 100%;
     background: linear-gradient(92.55deg, #f2b236 32.31%, #ff9c1a 64.34%);
-// ===============FOOTER LEFT SIDE ==============
+
+     // ===============FOOTER LEFT SIDE ==============
 
     &-top {
         display: flex;
@@ -95,9 +100,9 @@ li {
                 }
             }
         }
-// ===============FOOTER LEFT SIDE END==============
+        // ===============FOOTER LEFT SIDE END==============
 
-// ===============FOOTER RIGHT MENU================
+        // ===============FOOTER RIGHT MENU================
         &-right {
             margin-top: 58px;
             margin-right: 53px;
@@ -115,9 +120,9 @@ li {
             color: $white;
             @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
         }
-// ===============FOOTER RIGHT MENU END================
+        // ===============FOOTER RIGHT MENU END================
 
-// ===============SOCIAL BUTTONS==============
+        // ===============SOCIAL BUTTONS==============
         &-social {
             -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
             -moz-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
@@ -196,6 +201,30 @@ li {
             fill: $white;
         }
     }
-
     // ===============SOCIAL BUTTONS END==============
-}
+
+    // ===============FOOTER BOTTOM==============
+
+    &-bottom{
+        box-sizing: border-box;
+        background: $black-grey;
+        width: 100%;
+
+        &-text{
+            display: inline-block;
+            margin: 56px 53px 57px 0;
+            text-decoration: none;
+            color: $lighter-grey;
+            @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
+
+            &-rights{
+                margin-left: 453px;
+                text-decoration: none;
+                color: $grey;
+                @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
+            }
+        }
+    }
+    // ===============FOOTER BOTTOM END==============
+    
+} // ===============FOOTER END==============
