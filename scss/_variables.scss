@@ -17,12 +17,12 @@ $peach: #F6D799;
 /* Обёртки - отдельный блок */
 .wrapper{
     /*Максимальная ширина страницы и выравнивание содержимого по центру*/
-    width: 1164px;
+    width: 1440px;
     margin: 0 auto;
 
     //Отступы по краям
     &-container {
-        //padding: 0 120px;
+        padding: 0 138px;
         box-sizing: border-box;
     }
     

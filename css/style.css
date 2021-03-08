@@ -4,11 +4,13 @@
 /* Обёртки - отдельный блок */
 .wrapper {
   /*Максимальная ширина страницы и выравнивание содержимого по центру*/
+  width: 1440px;
   margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
 }
 
 .wrapper-container {
+  padding: 0 138px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -94,9 +96,16 @@ button {
   padding: 0;
 }
 
-.container {
-  width: 1164px;
-  margin: 0 auto;
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.correction {
+  margin-left: 300px;
 }
 
 .bold {
