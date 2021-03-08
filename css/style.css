@@ -36,6 +36,20 @@
 }
 
 /* end === content-without-footer === end */
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
 /* Шрифты */
 /* example: 
 @font-face {
@@ -58,6 +72,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: rubik;
+  src: url(../fonts/Rubik-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* mixin */
 /* example:
 @mixin font-lato-normal-size-line($size-format: 400, $fonts:14px, $linehe: 17px) {
@@ -76,18 +97,6 @@
 .container {
   width: 1164px;
   margin: 0 auto;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.correction {
-  margin-left: 300px;
 }
 
 .bold {
@@ -191,18 +200,22 @@ a {
 }
 
 .footer-top-right {
-  margin-top: 58px;
-  margin-right: 53px;
-  color: #FFFFFF;
   font-family: rubik;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
+  margin-top: 58px;
+  margin-right: 53px;
+  color: #FFFFFF;
 }
 
 .footer-top-right-list {
   margin-bottom: 16px;
+}
+
+.footer-top-right:nth-child(2) {
+  margin-left: 300px;
 }
 
 .footer-top-block {
@@ -229,8 +242,8 @@ a {
 
 .footer-top-svg {
   fill: #FFFFFF;
-  margin-top: 3px;
-  margin-left: 3px;
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
 .footer-top-svg-whatsup {
@@ -278,6 +291,14 @@ a {
 
 .footer-top-social:hover {
   background: #FFFFFF;
+}
+
+.footer-top-social:hover .footer-top-svg {
+  fill: #90c1bf;
+}
+
+.footer-top-social:active .footer-top-svg {
+  fill: #FFFFFF;
 }
 
 .footer-top-social:active {

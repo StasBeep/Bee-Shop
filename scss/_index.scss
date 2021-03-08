@@ -1,8 +1,9 @@
 /* index */
-* {
-    margin: 0;
-    padding: 0;
-}
+
+*{
+     margin: 0;
+     padding: 0;
+    }
 
 .container {
     width: 1164px;
@@ -10,17 +11,6 @@
 }
 
 // ==========FOOTER-CORRECTIONS==========
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.correction {
-    margin-left: 300px;
-}
 
 .bold {
     @include font($size-format: 700, $fonts: 16px, $linehe: 160%);
@@ -28,7 +18,7 @@ a {
 
 // ==========FOOTER-CORRECTIONS==========
 
-// ===============FOOTER==============
+// ===============FOOTER=================
 
 .footer {
     box-sizing: border-box;
@@ -104,15 +94,24 @@ a {
 
         // ===============FOOTER RIGHT MENU================
         &-right {
+            
+            @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
+
             margin-top: 58px;
             margin-right: 53px;
+
             color: $white;
-            @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
 
             &-list {
                 margin-bottom: 16px;
             }
+
+            &:nth-child(2){
+                margin-left: 300px;
+            }
         }
+
+
         // =========Спросить совет у Стаса=======
         // и про марджин топ тоже
         &-block {
@@ -138,21 +137,21 @@ a {
 
         &-svg {
             fill: $white;
-            margin-top: 3px;
-            margin-left: 3px;
+            margin-top: 4px;
+            margin-left: 4px;
 
             &-whatsup {
                 fill: $white;
                 margin-top: 3px;
                 margin-left: 5px;
-            }
 
-            &-whatsup:hover {
-                fill: $light-grey;
-            }
-
-            &-whatsup:active {
-                fill: $white;
+                &:hover {
+                    fill: $light-grey;
+                }
+    
+                &:active {
+                    fill: $white;
+                }
             }
 
             &-viber {
@@ -187,6 +186,15 @@ a {
 
         &-social:hover {
             background: $white;
+        }
+
+        &-social:hover .footer-top-svg {
+            fill: $light-grey;
+            
+        }
+
+        &-social:active .footer-top-svg{
+            fill: $white;
         }
 
         &-social:active {
