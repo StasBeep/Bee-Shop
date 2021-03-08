@@ -43,3 +43,21 @@ $peach: #F6D799;
     flex-grow:1; /* Отношение блоков */
 }
 /* end === content-without-footer === end */
+
+// обнуление стилей для базовых элементов
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+// обнуление стилей для базовых элементов
