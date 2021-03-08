@@ -4,11 +4,13 @@
 /* Обёртки - отдельный блок */
 .wrapper {
   /*Максимальная ширина страницы и выравнивание содержимого по центру*/
+  width: 1440px;
   margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
 }
 
 .wrapper-container {
+  padding: 0 138px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -74,7 +76,7 @@
 }
 
 .container {
-  width: 1164px;
+  width: 1440px;
   margin: 0 auto;
 }
 
