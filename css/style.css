@@ -62,14 +62,14 @@ button {
 }*/
 @font-face {
   font-family: rubik;
-  src: url(../fonts/Rubik-Regular.ttf);
+  src: url(../fonts/rubik-regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: rubik;
-  src: url(../fonts/Rubik-Medium.ttf);
+  src: url(../fonts/rubik-medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
@@ -319,6 +319,7 @@ button {
 }
 
 .footer-top-left-search-button:hover {
+  cursor: pointer;
   fill: #5e6164;
 }
 
@@ -337,6 +338,10 @@ button {
 
 .footer-top-right-list {
   margin-bottom: 16px;
+}
+
+.footer-top-right-list-color {
+  color: #FFFFFF;
 }
 
 .footer-top-right:nth-child(2) {
@@ -376,23 +381,21 @@ button {
   margin-left: 5px;
 }
 
-.footer-top-svg {
-  fill: #FFFFFF;
-  margin-top: 4px;
-  margin-left: 4px;
-}
-
-.footer-top-svg-viber {
-  fill: #FFFFFF;
+.footer-top-social:nth-child(3) .footer-top-svg {
   margin-top: 3px;
   margin-left: 5px;
 }
 
-.footer-top-svg-teleg {
-  fill: #FFFFFF;
+.footer-top-social:nth-child(4) .footer-top-svg {
   margin-top: 7px;
   margin-left: 3px;
   margin-bottom: 1px;
+}
+
+.footer-top-svg {
+  fill: #FFFFFF;
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
 .footer-top-svg:hover {
