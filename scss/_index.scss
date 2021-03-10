@@ -16,11 +16,13 @@
     }
 
     &-logo {
+        margin-right: 91px;
+        margin-left: 18px;
 
         &-link {
             display: block;
             min-height: 47px;
-            max-width: 290px;
+            min-width: 290px;
             @include font(500, 19px, 22px);
             letter-spacing: 0.6em;
             color: $white;
@@ -43,6 +45,7 @@
 
     &-search {
         margin-top: 14px;
+        margin-right: 2px;
         width: 327px;
         max-height: 45px;
         background: $white;

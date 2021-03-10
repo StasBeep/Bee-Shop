@@ -110,10 +110,15 @@ button {
           justify-content: space-between;
 }
 
+.header-logo {
+  margin-right: 91px;
+  margin-left: 18px;
+}
+
 .header-logo-link {
   display: block;
   min-height: 47px;
-  max-width: 290px;
+  min-width: 290px;
   font-family: rubik;
   font-weight: 500;
   font-style: normal;
@@ -147,6 +152,7 @@ button {
 
 .header-search {
   margin-top: 14px;
+  margin-right: 2px;
   width: 327px;
   max-height: 45px;
   background: #FFFFFF;
