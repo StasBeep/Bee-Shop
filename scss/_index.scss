@@ -1,40 +1,124 @@
 /* index */
 
+// ========== header ====================
+.header {
+    background: linear-gradient(92.55deg, $main-background-one 32.31%, $main-background-two 64.34%);
+    padding: 42px 0 0;
+    box-sizing: border-box;
+    position: fixed;
+    // Внимание! меню должно быть выше, чем другие блоки
+    z-index: 99;
+    width: 100%;
+
+    &-flx {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        margin-right: 91px;
+        margin-left: 18px;
+        margin-bottom: 30px;
+
+        &-link {
+            display: block;
+            min-height: 47px;
+            min-width: 290px;
+            @include font(500, 19px, 22px);
+            letter-spacing: 0.6em;
+            color: $white;
+            background-color: $peach;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        &-txt {
+            @include font(500, 18px, 21px);
+            color: $white-light;
+        }
+    }
+
+    &-phone {
+        margin-top: 28px;
+        @include font(500, 18px, 21px);
+        color: $brown;
+    }
+
+    &-search {
+        margin-top: 14px;
+        margin-right: 2px;
+        width: 327px;
+        max-height: 45px;
+        background: $white;
+        border-radius: 30px;
+        position: relative;
+        padding: 12px 0 12px 22px;
+        box-sizing: border-box;
+    }
+
+    &-btn-link {
+        margin-top: 14px;
+        display: block;
+        max-width: 45px;
+        max-height: 45px;
+        background-color: $white;
+        border-radius: 12px;
+        padding: 1px 2px 0;
+
+
+        &-svg {
+            fill: $orange;
+        }
+
+
+        &:nth-child(5) .header-btn-link-svg {
+            margin-top: 2px;
+        }
+
+        &:hover {
+            background-color: $orange;
+        }
+
+        &:hover .header-btn-link-svg {
+            fill: $white;
+        }
+    }
+
+    &-menu {
+        padding: 21px 0;
+        background-color: $white-light;
+    }
+}
+
+// end ====== header ================ end
+
+
 
 // ==========FOOTER-CORRECTIONS==========
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.correction {
-    margin-left: 300px;
-}
 
 .bold {
-    @include font($size-format: 700, $fonts: 16px, $linehe: 160%);
+    @include font(700, 16px, 160%);
 }
 
 // ==========FOOTER-CORRECTIONS==========
 
-// ===============FOOTER==============
+// ===============FOOTER=================
 
 .footer {
     box-sizing: border-box;
     width: 100%;
     background: linear-gradient(92.55deg, #f2b236 32.31%, #ff9c1a 64.34%);
 
-     // ===============FOOTER LEFT SIDE ==============
+    // ===============FOOTER LEFT SIDE ==============
 
     &-top {
         display: flex;
         justify-content: space-between;
+        padding: 58px 0 87px 0;
+        box-sizing: border-box;
+
         &-left {
             &-logo {
-                margin-top: 58px;
                 width: 265px;
                 background: $peach;
                 border-radius: 10px;
@@ -65,7 +149,6 @@ a {
 
             &-search {
                 margin-top: 45px;
-                margin-bottom: 85px;
                 width: 140px;
                 background: $white;
                 border-radius: 30px;
@@ -92,26 +175,43 @@ a {
                 }
             }
         }
+
         // ===============FOOTER LEFT SIDE END==============
 
         // ===============FOOTER RIGHT MENU================
         &-right {
-            margin-top: 58px;
-            margin-right: 53px;
+
+            @include font(400, 16px, 160%);
+
+            margin: 0 50px 0 0;
+            padding: 0;
+            box-sizing: border-box;
             color: $white;
-            @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
 
             &-list {
                 margin-bottom: 16px;
             }
+
+            &:nth-child(2) {
+                margin-left: 300px;
+            }
+
+            &:nth-child(3) .footer-top-right-list:nth-child(6) {
+                margin-bottom: 0;
+            }
         }
+
+
         // =========Спросить совет у Стаса=======
         // и про марджин топ тоже
         &-block {
-            margin-top: 58px;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
             color: $white;
             @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
         }
+
         // ===============FOOTER RIGHT MENU END================
 
         // ===============SOCIAL BUTTONS==============
@@ -126,39 +226,22 @@ a {
             border-radius: 12px;
             margin-right: 7px;
             margin-top: 19px;
+
+            &:nth-child(2) .footer-top-svg {
+                margin-top: 3px;
+                margin-left: 5px;
+            }
         }
 
         &-svg {
             fill: $white;
-            margin-top: 3px;
-            margin-left: 3px;
-
-            &-whatsup {
-                fill: $white;
-                margin-top: 3px;
-                margin-left: 5px;
-            }
-
-            &-whatsup:hover {
-                fill: $light-grey;
-            }
-
-            &-whatsup:active {
-                fill: $white;
-            }
+            margin-top: 4px;
+            margin-left: 4px;
 
             &-viber {
                 fill: $white;
                 margin-top: 3px;
                 margin-left: 5px;
-            }
-
-            &-viber:hover {
-                fill: $light-grey;
-            }
-
-            &-viber:active {
-                fill: $white;
             }
 
             &-teleg {
@@ -168,11 +251,11 @@ a {
                 margin-bottom: 1px;
             }
 
-            &-teleg:hover {
+            &:hover {
                 fill: $light-grey;
             }
-
-            &-teleg:active {
+    
+            &:active {
                 fill: $white;
             }
         }
@@ -185,31 +268,33 @@ a {
             background: $light-grey;
         }
 
-        &-svg:hover {
+        &-social:hover .footer-top-svg {
             fill: $light-grey;
+
         }
 
-        &-svg:active {
+        &-social:active .footer-top-svg {
             fill: $white;
         }
     }
+
     // ===============SOCIAL BUTTONS END==============
 
     // ===============FOOTER BOTTOM==============
 
-    &-bottom{
+    &-bottom {
         box-sizing: border-box;
         background: $black-grey;
         width: 100%;
 
-        &-text{
+        &-text {
             display: inline-block;
             margin: 56px 53px 57px 0;
             text-decoration: none;
             color: $lighter-grey;
             @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
 
-            &-rights{
+            &-rights {
                 margin-left: 453px;
                 text-decoration: none;
                 color: $grey;
@@ -217,6 +302,9 @@ a {
             }
         }
     }
+
     // ===============FOOTER BOTTOM END==============
-    
-} // ===============FOOTER END==============
+
+}
+
+// ===============FOOTER END==============

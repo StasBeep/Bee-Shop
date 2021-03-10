@@ -4,11 +4,13 @@
 /* Обёртки - отдельный блок */
 .wrapper {
   /*Максимальная ширина страницы и выравнивание содержимого по центру*/
+  width: 1440px;
   margin: 0 auto;
   /* Обёртка для прижатия подвала к нижней части */
 }
 
 .wrapper-container {
+  padding: 0 138px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -36,6 +38,20 @@
 }
 
 /* end === content-without-footer === end */
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
 /* Шрифты */
 /* example: 
 @font-face {
@@ -58,6 +74,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: rubik;
+  src: url(../fonts/Rubik-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* mixin */
 /* example:
 @mixin font-lato-normal-size-line($size-format: 400, $fonts:14px, $linehe: 17px) {
@@ -68,16 +91,108 @@
     line-height: $linehe;
 }*/
 /* index */
-li {
-  list-style-type: none;
+.header {
+  background: linear-gradient(92.55deg, #f2b236 32.31%, #ff9c1a 64.34%);
+  padding: 42px 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
 }
 
-a {
-  text-decoration: none;
+.header-flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.correction {
-  margin-left: 300px;
+.header-logo {
+  margin-right: 91px;
+  margin-left: 18px;
+  margin-bottom: 30px;
+}
+
+.header-logo-link {
+  display: block;
+  min-height: 47px;
+  min-width: 290px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 0.6em;
+  color: #FFFFFF;
+  background-color: #F6D799;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header-logo-txt {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FAFAF9;
+}
+
+.header-phone {
+  margin-top: 28px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #884900;
+}
+
+.header-search {
+  margin-top: 14px;
+  margin-right: 2px;
+  width: 327px;
+  max-height: 45px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  position: relative;
+  padding: 12px 0 12px 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-btn-link {
+  margin-top: 14px;
+  display: block;
+  max-width: 45px;
+  max-height: 45px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 1px 2px 0;
+}
+
+.header-btn-link-svg {
+  fill: #F2B236;
+}
+
+.header-btn-link:nth-child(5) .header-btn-link-svg {
+  margin-top: 2px;
+}
+
+.header-btn-link:hover {
+  background-color: #F2B236;
+}
+
+.header-btn-link:hover .header-btn-link-svg {
+  fill: #FFFFFF;
+}
+
+.header-menu {
+  padding: 21px 0;
+  background-color: #FAFAF9;
 }
 
 .bold {
@@ -102,10 +217,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 58px 0 87px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer-top-left-logo {
-  margin-top: 58px;
   width: 265px;
   background: #F6D799;
   border-radius: 10px;
@@ -148,7 +265,6 @@ a {
 
 .footer-top-left-search {
   margin-top: 45px;
-  margin-bottom: 85px;
   width: 140px;
   background: #FFFFFF;
   border-radius: 30px;
@@ -181,22 +297,34 @@ a {
 }
 
 .footer-top-right {
-  margin-top: 58px;
-  margin-right: 53px;
-  color: #FFFFFF;
   font-family: rubik;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
+  margin: 0 50px 0 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFFFFF;
 }
 
 .footer-top-right-list {
   margin-bottom: 16px;
 }
 
+.footer-top-right:nth-child(2) {
+  margin-left: 300px;
+}
+
+.footer-top-right:nth-child(3) .footer-top-right-list:nth-child(6) {
+  margin-bottom: 0;
+}
+
 .footer-top-block {
-  margin-top: 58px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #FFFFFF;
   font-family: rubik;
   font-weight: 400;
@@ -217,38 +345,21 @@ a {
   margin-top: 19px;
 }
 
-.footer-top-svg {
-  fill: #FFFFFF;
-  margin-top: 3px;
-  margin-left: 3px;
-}
-
-.footer-top-svg-whatsup {
-  fill: #FFFFFF;
+.footer-top-social:nth-child(2) .footer-top-svg {
   margin-top: 3px;
   margin-left: 5px;
 }
 
-.footer-top-svg-whatsup:hover {
-  fill: #90c1bf;
-}
-
-.footer-top-svg-whatsup:active {
+.footer-top-svg {
   fill: #FFFFFF;
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
 .footer-top-svg-viber {
   fill: #FFFFFF;
   margin-top: 3px;
   margin-left: 5px;
-}
-
-.footer-top-svg-viber:hover {
-  fill: #90c1bf;
-}
-
-.footer-top-svg-viber:active {
-  fill: #FFFFFF;
 }
 
 .footer-top-svg-teleg {
@@ -258,11 +369,11 @@ a {
   margin-bottom: 1px;
 }
 
-.footer-top-svg-teleg:hover {
+.footer-top-svg:hover {
   fill: #90c1bf;
 }
 
-.footer-top-svg-teleg:active {
+.footer-top-svg:active {
   fill: #FFFFFF;
 }
 
@@ -274,11 +385,11 @@ a {
   background: #90c1bf;
 }
 
-.footer-top-svg:hover {
+.footer-top-social:hover .footer-top-svg {
   fill: #90c1bf;
 }
 
-.footer-top-svg:active {
+.footer-top-social:active .footer-top-svg {
   fill: #FFFFFF;
 }
 
