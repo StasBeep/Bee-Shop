@@ -191,8 +191,34 @@ button {
 }
 
 .header-menu {
-  padding: 21px 0;
+  padding: 22px 0;
   background-color: #FAFAF9;
+}
+
+.header-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-menu-list-li {
+  margin-right: 36px;
+}
+
+.header-menu-list-li-link {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #222528;
 }
 
 .bold {

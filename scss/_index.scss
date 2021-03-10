@@ -85,8 +85,25 @@
     }
 
     &-menu {
-        padding: 21px 0;
+        padding: 22px 0;
         background-color: $white-light;
+
+        &-list {
+            display: flex;
+            padding-left: 0;
+            box-sizing: border-box;
+            margin: 0;
+            justify-content: flex-end;
+
+            &-li {
+                margin-right: 36px;
+
+                &-link {
+                    @include font(400, 16px, 26px);
+                    color: $black-grey;
+                }
+            }
+        }
     }
 }
 
