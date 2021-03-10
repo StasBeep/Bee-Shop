@@ -91,23 +91,6 @@ button {
     line-height: $linehe;
 }*/
 /* index */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.correction {
-  margin-left: 300px;
-}
-
 .bold {
   font-family: rubik;
   font-weight: 700;
