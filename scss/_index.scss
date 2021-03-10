@@ -97,7 +97,7 @@
 // ==========FOOTER-CORRECTIONS==========
 
 .bold {
-    @include font($size-format: 700, $fonts: 16px, $linehe: 160%);
+    @include font(700, 16px, 160%);
 }
 
 // ==========FOOTER-CORRECTIONS==========
@@ -114,10 +114,11 @@
     &-top {
         display: flex;
         justify-content: space-between;
+        padding: 58px 0 87px 0;
+        box-sizing: border-box;
 
         &-left {
             &-logo {
-                margin-top: 58px;
                 width: 265px;
                 background: $peach;
                 border-radius: 10px;
@@ -148,7 +149,6 @@
 
             &-search {
                 margin-top: 45px;
-                margin-bottom: 85px;
                 width: 140px;
                 background: $white;
                 border-radius: 30px;
@@ -181,11 +181,11 @@
         // ===============FOOTER RIGHT MENU================
         &-right {
 
-            @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
+            @include font(400, 16px, 160%);
 
-            margin-top: 58px;
-            margin-right: 53px;
-
+            margin: 0 50px 0 0;
+            padding: 0;
+            box-sizing: border-box;
             color: $white;
 
             &-list {
@@ -195,13 +195,19 @@
             &:nth-child(2) {
                 margin-left: 300px;
             }
+
+            &:nth-child(3) .footer-top-right-list:nth-child(6) {
+                margin-bottom: 0;
+            }
         }
 
 
         // =========Спросить совет у Стаса=======
         // и про марджин топ тоже
         &-block {
-            margin-top: 58px;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
             color: $white;
             @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
         }
@@ -220,6 +226,11 @@
             border-radius: 12px;
             margin-right: 7px;
             margin-top: 19px;
+
+            &:nth-child(2) .footer-top-svg {
+                margin-top: 3px;
+                margin-left: 5px;
+            }
         }
 
         &-svg {
@@ -227,32 +238,10 @@
             margin-top: 4px;
             margin-left: 4px;
 
-            &-whatsup {
-                fill: $white;
-                margin-top: 3px;
-                margin-left: 5px;
-
-                &:hover {
-                    fill: $light-grey;
-                }
-
-                &:active {
-                    fill: $white;
-                }
-            }
-
             &-viber {
                 fill: $white;
                 margin-top: 3px;
                 margin-left: 5px;
-            }
-
-            &-viber:hover {
-                fill: $light-grey;
-            }
-
-            &-viber:active {
-                fill: $white;
             }
 
             &-teleg {
@@ -262,11 +251,11 @@
                 margin-bottom: 1px;
             }
 
-            &-teleg:hover {
+            &:hover {
                 fill: $light-grey;
             }
-
-            &-teleg:active {
+    
+            &:active {
                 fill: $white;
             }
         }
@@ -275,24 +264,16 @@
             background: $white;
         }
 
+        &-social:active {
+            background: $light-grey;
+        }
+
         &-social:hover .footer-top-svg {
             fill: $light-grey;
 
         }
 
         &-social:active .footer-top-svg {
-            fill: $white;
-        }
-
-        &-social:active {
-            background: $light-grey;
-        }
-
-        &-svg:hover {
-            fill: $light-grey;
-        }
-
-        &-svg:active {
             fill: $white;
         }
     }

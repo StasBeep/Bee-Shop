@@ -217,10 +217,12 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 58px 0 87px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer-top-left-logo {
-  margin-top: 58px;
   width: 265px;
   background: #F6D799;
   border-radius: 10px;
@@ -263,7 +265,6 @@ button {
 
 .footer-top-left-search {
   margin-top: 45px;
-  margin-bottom: 85px;
   width: 140px;
   background: #FFFFFF;
   border-radius: 30px;
@@ -301,8 +302,10 @@ button {
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
-  margin-top: 58px;
-  margin-right: 53px;
+  margin: 0 50px 0 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #FFFFFF;
 }
 
@@ -314,8 +317,14 @@ button {
   margin-left: 300px;
 }
 
+.footer-top-right:nth-child(3) .footer-top-right-list:nth-child(6) {
+  margin-bottom: 0;
+}
+
 .footer-top-block {
-  margin-top: 58px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #FFFFFF;
   font-family: rubik;
   font-weight: 400;
@@ -336,38 +345,21 @@ button {
   margin-top: 19px;
 }
 
+.footer-top-social:nth-child(2) .footer-top-svg {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
 .footer-top-svg {
   fill: #FFFFFF;
   margin-top: 4px;
   margin-left: 4px;
 }
 
-.footer-top-svg-whatsup {
-  fill: #FFFFFF;
-  margin-top: 3px;
-  margin-left: 5px;
-}
-
-.footer-top-svg-whatsup:hover {
-  fill: #90c1bf;
-}
-
-.footer-top-svg-whatsup:active {
-  fill: #FFFFFF;
-}
-
 .footer-top-svg-viber {
   fill: #FFFFFF;
   margin-top: 3px;
   margin-left: 5px;
-}
-
-.footer-top-svg-viber:hover {
-  fill: #90c1bf;
-}
-
-.footer-top-svg-viber:active {
-  fill: #FFFFFF;
 }
 
 .footer-top-svg-teleg {
@@ -377,11 +369,11 @@ button {
   margin-bottom: 1px;
 }
 
-.footer-top-svg-teleg:hover {
+.footer-top-svg:hover {
   fill: #90c1bf;
 }
 
-.footer-top-svg-teleg:active {
+.footer-top-svg:active {
   fill: #FFFFFF;
 }
 
@@ -389,23 +381,15 @@ button {
   background: #FFFFFF;
 }
 
+.footer-top-social:active {
+  background: #90c1bf;
+}
+
 .footer-top-social:hover .footer-top-svg {
   fill: #90c1bf;
 }
 
 .footer-top-social:active .footer-top-svg {
-  fill: #FFFFFF;
-}
-
-.footer-top-social:active {
-  background: #90c1bf;
-}
-
-.footer-top-svg:hover {
-  fill: #90c1bf;
-}
-
-.footer-top-svg:active {
   fill: #FFFFFF;
 }
 
