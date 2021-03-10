@@ -62,9 +62,24 @@
         max-height: 45px;
         background-color: $white;
         border-radius: 12px;
+        padding: 1px 2px 0;
+
 
         &-svg {
             fill: $orange;
+        }
+
+
+        &:nth-child(5) .header-btn-link-svg {
+            margin-top: 2px;
+        }
+
+        &:hover {
+            background-color: $orange;
+        }
+
+        &:hover .header-btn-link-svg {
+            fill: $white;
         }
     }
 }

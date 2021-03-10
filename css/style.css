@@ -170,10 +170,23 @@ button {
   max-height: 45px;
   background-color: #FFFFFF;
   border-radius: 12px;
+  padding: 1px 2px 0;
 }
 
 .header-btn-link-svg {
   fill: #F2B236;
+}
+
+.header-btn-link:nth-child(5) .header-btn-link-svg {
+  margin-top: 2px;
+}
+
+.header-btn-link:hover {
+  background-color: #F2B236;
+}
+
+.header-btn-link:hover .header-btn-link-svg {
+  fill: #FFFFFF;
 }
 
 .bold {
