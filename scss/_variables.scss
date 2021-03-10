@@ -3,26 +3,33 @@
 // Переменные цвета текста
 
 $white: #FFFFFF;
+$white-light: #FAFAF9;
+
 $brown: #884900;
+
 $grey: #A5AAAF;
 $light-grey: #90c1bf;
 $lighter-grey:#CED0D2;
 
 // Переменные цвета фона
-
+$main-background-one: #f2b236;
+$main-background-two: #ff9c1a;
 $black-grey: #222528;
 $peach: #F6D799;
+
+// Переменные окраски svg
+$orange: #F2B236;
 
 /* === wrapper === */
 /* Обёртки - отдельный блок */
 .wrapper{
     /*Максимальная ширина страницы и выравнивание содержимого по центру*/
-    //max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
 
     //Отступы по краям
     &-container {
-        //padding: 0 120px;
+        padding: 0 138px;
         box-sizing: border-box;
     }
     
@@ -43,3 +50,21 @@ $peach: #F6D799;
     flex-grow:1; /* Отношение блоков */
 }
 /* end === content-without-footer === end */
+
+// обнуление стилей для базовых элементов
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+// обнуление стилей для базовых элементов
