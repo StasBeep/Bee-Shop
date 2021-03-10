@@ -98,6 +98,16 @@ button {
           box-sizing: border-box;
   position: fixed;
   z-index: 99;
+  width: 100%;
+}
+
+.header-flx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-logo-link {
@@ -123,6 +133,41 @@ button {
   font-size: 18px;
   line-height: 21px;
   color: #FAFAF9;
+}
+
+.header-phone {
+  margin-top: 28px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #884900;
+}
+
+.header-search {
+  margin-top: 14px;
+  width: 327px;
+  max-height: 45px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  position: relative;
+  padding: 12px 0 12px 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-btn-link {
+  margin-top: 14px;
+  display: block;
+  max-width: 45px;
+  max-height: 45px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+}
+
+.header-btn-link-svg {
+  fill: #F2B236;
 }
 
 .bold {

@@ -6,7 +6,14 @@
     padding: 42px 0 30px;
     box-sizing: border-box;
     position: fixed;
+    // Внимание! меню должно быть выше, чем другие блоки
     z-index: 99;
+    width: 100%;
+
+    &-flx {
+        display: flex;
+        justify-content: space-between;
+    }
 
     &-logo {
 
@@ -20,12 +27,41 @@
             background-color: $peach;
             border-radius: 10px;
             text-align: center;
-            
         }
 
-        &-txt{
+        &-txt {
             @include font(500, 18px, 21px);
-            color: $white-txt;
+            color: $white-light;
+        }
+    }
+
+    &-phone {
+        margin-top: 28px;
+        @include font(500, 18px, 21px);
+        color: $brown;
+    }
+
+    &-search {
+        margin-top: 14px;
+        width: 327px;
+        max-height: 45px;
+        background: $white;
+        border-radius: 30px;
+        position: relative;
+        padding: 12px 0 12px 22px;
+        box-sizing: border-box;
+    }
+
+    &-btn-link {
+        margin-top: 14px;
+        display: block;
+        max-width: 45px;
+        max-height: 45px;
+        background-color: $white;
+        border-radius: 12px;
+
+        &-svg {
+            fill: $orange;
         }
     }
 }
