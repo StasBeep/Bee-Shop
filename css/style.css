@@ -91,6 +91,40 @@ button {
     line-height: $linehe;
 }*/
 /* index */
+.header {
+  background: linear-gradient(92.55deg, #f2b236 32.31%, #ff9c1a 64.34%);
+  padding: 42px 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  z-index: 99;
+}
+
+.header-logo-link {
+  display: block;
+  min-height: 47px;
+  max-width: 290px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 0.6em;
+  color: #FFFFFF;
+  background-color: #F6D799;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header-logo-txt {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FAFAF9;
+}
+
 .bold {
   font-family: rubik;
   font-weight: 700;
