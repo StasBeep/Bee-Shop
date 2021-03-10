@@ -231,7 +231,19 @@
                 margin-top: 3px;
                 margin-left: 5px;
             }
+
+            &:nth-child(3) .footer-top-svg {
+                margin-top: 3px;
+                margin-left: 5px;
+            }
+
+            &:nth-child(4) .footer-top-svg {
+                margin-top: 7px;
+                margin-left: 3px;
+                margin-bottom: 1px;
+            }
         }
+
 
         &-svg {
             fill: $white;

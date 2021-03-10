@@ -62,14 +62,14 @@ button {
 }*/
 @font-face {
   font-family: rubik;
-  src: url(../fonts/Rubik-Regular.ttf);
+  src: url(../fonts/rubik-regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: rubik;
-  src: url(../fonts/Rubik-Medium.ttf);
+  src: url(../fonts/rubik-medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
@@ -348,6 +348,17 @@ button {
 .footer-top-social:nth-child(2) .footer-top-svg {
   margin-top: 3px;
   margin-left: 5px;
+}
+
+.footer-top-social:nth-child(3) .footer-top-svg {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.footer-top-social:nth-child(4) .footer-top-svg {
+  margin-top: 7px;
+  margin-left: 3px;
+  margin-bottom: 1px;
 }
 
 .footer-top-svg {
