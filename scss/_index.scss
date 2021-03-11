@@ -5,9 +5,9 @@
     background: linear-gradient(92.55deg, $main-background-one 32.31%, $main-background-two 64.34%);
     padding: 42px 0 0;
     box-sizing: border-box;
-    position: fixed;
+    // position: fixed;
     // Внимание! меню должно быть выше, чем другие блоки
-    z-index: 99;
+    // z-index: 99;
     width: 100%;
 
     &-flx {
@@ -110,14 +110,31 @@
 // end ====== header ================ end
 
 
+.feedback{
+    width: 100%;
+    
+    &-text{
+        display: flex;
+        justify-content: space-between;
 
-// ==========FOOTER-CORRECTIONS==========
+        &-title{
+            @include font(500, 44px, 52px);
+        }
+    }
 
-.bold {
-    @include font(700, 16px, 160%);
+
+    &-link{
+        @include font(500, 16px, 19px);
+        text-transform: uppercase;
+        // color: $blush;
+        color: red;
+        padding-top: 28px;
+    }
+
+    &-last{
+        color: red;
+    }
 }
-
-// ==========FOOTER-CORRECTIONS==========
 
 // ===============FOOTER=================
 
@@ -201,19 +218,29 @@
         &-right {
 
             @include font(400, 16px, 160%);
-
+            min-width: 170px;
             margin: 0 50px 0 0;
             padding: 0;
             box-sizing: border-box;
             color: $white;
+            
 
             &-list {
                 margin-bottom: 16px;
-
+            
                 &-color{
-                        color: $white;
+                    color: $white;
+                    
+                    &:hover{
+                    @include font(700, 16px, 160%);
+                      
+                    }
                 }
+
+
             }
+
+
 
             &:nth-child(2) {
                 margin-left: 300px;
@@ -231,7 +258,8 @@
             margin-top: 0;
             margin-bottom: 0;
             color: $white;
-            @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
+            @include font(400, 16px, 160%);
+            min-width: 220px;
         }
 
         // ===============FOOTER RIGHT MENU END================
