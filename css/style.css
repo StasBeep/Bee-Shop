@@ -62,14 +62,14 @@ button {
 }*/
 @font-face {
   font-family: rubik;
-  src: url(../fonts/Rubik-Regular.ttf);
+  src: url(../fonts/rubik-regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: rubik;
-  src: url(../fonts/Rubik-Medium.ttf);
+  src: url(../fonts/rubik-medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
@@ -191,8 +191,34 @@ button {
 }
 
 .header-menu {
-  padding: 21px 0;
+  padding: 22px 0;
   background-color: #FAFAF9;
+}
+
+.header-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header-menu-list-li {
+  margin-right: 36px;
+}
+
+.header-menu-list-li-link {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #222528;
 }
 
 .bold {
@@ -293,6 +319,7 @@ button {
 }
 
 .footer-top-left-search-button:hover {
+  cursor: pointer;
   fill: #5e6164;
 }
 
@@ -311,6 +338,10 @@ button {
 
 .footer-top-right-list {
   margin-bottom: 16px;
+}
+
+.footer-top-right-list-color {
+  color: #FFFFFF;
 }
 
 .footer-top-right:nth-child(2) {
@@ -350,23 +381,21 @@ button {
   margin-left: 5px;
 }
 
-.footer-top-svg {
-  fill: #FFFFFF;
-  margin-top: 4px;
-  margin-left: 4px;
-}
-
-.footer-top-svg-viber {
-  fill: #FFFFFF;
+.footer-top-social:nth-child(3) .footer-top-svg {
   margin-top: 3px;
   margin-left: 5px;
 }
 
-.footer-top-svg-teleg {
-  fill: #FFFFFF;
+.footer-top-social:nth-child(4) .footer-top-svg {
   margin-top: 7px;
   margin-left: 3px;
   margin-bottom: 1px;
+}
+
+.footer-top-svg {
+  fill: #FFFFFF;
+  margin-top: 4px;
+  margin-left: 4px;
 }
 
 .footer-top-svg:hover {

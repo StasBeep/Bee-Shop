@@ -85,8 +85,25 @@
     }
 
     &-menu {
-        padding: 21px 0;
+        padding: 22px 0;
         background-color: $white-light;
+
+        &-list {
+            display: flex;
+            padding-left: 0;
+            box-sizing: border-box;
+            margin: 0;
+            justify-content: flex-end;
+
+            &-li {
+                margin-right: 36px;
+
+                &-link {
+                    @include font(400, 16px, 26px);
+                    color: $black-grey;
+                }
+            }
+        }
     }
 }
 
@@ -155,6 +172,7 @@
                 padding: 14px 106px 13px 20px;
                 position: relative;
 
+
                 &-input {
                     color: $grey;
                     box-sizing: border-box;
@@ -169,8 +187,9 @@
                     right: 15px;
                     fill: #a5aaaf;
                 }
-
+                
                 &-button:hover {
+                    cursor: pointer;
                     fill: #5e6164;
                 }
             }
@@ -190,6 +209,10 @@
 
             &-list {
                 margin-bottom: 16px;
+
+                &-color{
+                        color: $white;
+                }
             }
 
             &:nth-child(2) {
@@ -199,11 +222,10 @@
             &:nth-child(3) .footer-top-right-list:nth-child(6) {
                 margin-bottom: 0;
             }
+
+            
         }
 
-
-        // =========Спросить совет у Стаса=======
-        // и про марджин топ тоже
         &-block {
             padding: 0;
             margin-top: 0;
@@ -231,25 +253,25 @@
                 margin-top: 3px;
                 margin-left: 5px;
             }
+
+            &:nth-child(3) .footer-top-svg {
+                margin-top: 3px;
+                margin-left: 5px;
+            }
+
+            &:nth-child(4) .footer-top-svg {
+                margin-top: 7px;
+                margin-left: 3px;
+                margin-bottom: 1px;
+            }
         }
+
 
         &-svg {
             fill: $white;
             margin-top: 4px;
             margin-left: 4px;
 
-            &-viber {
-                fill: $white;
-                margin-top: 3px;
-                margin-left: 5px;
-            }
-
-            &-teleg {
-                fill: $white;
-                margin-top: 7px;
-                margin-left: 3px;
-                margin-bottom: 1px;
-            }
 
             &:hover {
                 fill: $light-grey;
