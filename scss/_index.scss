@@ -116,23 +116,30 @@
     &-text{
         display: flex;
         justify-content: space-between;
-
+        
         &-title{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             @include font(500, 44px, 52px);
+            
         }
     }
 
 
     &-link{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         @include font(500, 16px, 19px);
         text-transform: uppercase;
-        // color: $blush;
-        color: red;
         padding-top: 28px;
+        color: $blush;
     }
 
     &-last{
-        color: red;
+        @include font(400, 16px, 160%);
+        color: $dark-grey;
     }
 }
 
@@ -156,6 +163,7 @@
                 width: 265px;
                 background: $peach;
                 border-radius: 10px;
+
 
                 &-text {
                     display: block;
