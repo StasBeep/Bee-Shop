@@ -113,9 +113,6 @@
 
 // ==========FOOTER-CORRECTIONS==========
 
-.bold {
-    @include font(700, 16px, 160%);
-}
 
 // ==========FOOTER-CORRECTIONS==========
 
@@ -201,19 +198,29 @@
         &-right {
 
             @include font(400, 16px, 160%);
-
+            min-width: 170px;
             margin: 0 50px 0 0;
             padding: 0;
             box-sizing: border-box;
             color: $white;
+            
 
             &-list {
                 margin-bottom: 16px;
-
+            
                 &-color{
-                        color: $white;
+                    color: $white;
+                    
+                    &:hover{
+                    @include font(700, 16px, 160%);
+                      
+                    }
                 }
+
+
             }
+
+
 
             &:nth-child(2) {
                 margin-left: 300px;
@@ -231,8 +238,10 @@
             margin-top: 0;
             margin-bottom: 0;
             color: $white;
-            @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
+            @include font(400, 16px, 160%);
+            min-width: 220px;
         }
+
 
         // ===============FOOTER RIGHT MENU END================
 
