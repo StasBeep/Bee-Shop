@@ -19,7 +19,7 @@
             <header class="header">
                 <div class="wrapper wrapper-container header-flx">
                     <div class="header-logo">
-                        <a class="header-logo-link" href="#">логотип</a>
+                        <a class="header-logo-link" href="index.html">логотип</a>
                         <span class="header-logo-txt">Лаборатория игр</span>
                     </div>
                     <span class="header-phone">8(000) 000 00 00 МСК (9-21)</span>
@@ -56,18 +56,42 @@
                     </a>
                 </div>
                 <nav class="header-menu">
-                    <div class="wrapper wrapper-container">
+                    <div class="wrapper header-menu-container">
                         <ul class="header-menu-list">
-                            <li class="header-menu-list-li"><a class="header-menu-list-li-link" href="#">Каталог</a></li>
+                            <li class="header-menu-list-li"><a class="header-menu-list-li-link" href="#">Каталог</a>
+                            </li>
                             <li class="header-menu-list-li"><a class="header-menu-list-li-link" href="#">Акции</a></li>
                             <li class="header-menu-list-li"><a class="header-menu-list-li-link" href="#">Отзывы</a></li>
-                            <li class="header-menu-list-li"><a class="header-menu-list-li-link" href="#">Доставка и оплата</a></li>
+                            <li class="header-menu-list-li"><a class="header-menu-list-li-link" href="#">Доставка и
+                                    оплата</a></li>
                             <li class="header-menu-list-li">
                                 <input type="checkbox" id="crawling-menu" class="header-menu-list-li-inp">
                                 <!--TODO: связь checkbox с иконкой, реализованных через псевдоэлементы-->
                                 <label for="crawling-menu" class="header-menu-list-li-link">
                                     О компании
                                 </label>
+                                <ul class="header-menu-list-li-hidden">
+                                    <li class="header-menu-list-li-hidden-li"><a class="header-menu-list-li-hidden-txt"
+                                            href="#">О нас</a></li>
+                                    <li class="header-menu-list-li-hidden-li"><a class="header-menu-list-li-hidden-txt"
+                                            href="#">Контакты</a></li>
+                                    <li class="header-menu-list-li-hidden-li"><a class="header-menu-list-li-hidden-txt"
+                                            href="#">Документы</a></li>
+                                    <!--! Элементы меню для удобства перехода между страницами -->
+                                    <!--TODO: Этих блоков в основном макете нет-->
+                                    <!--! Убрать эти элементы в конце-->
+                                    <li class="header-menu-list-li-hidden-li"><a class="header-menu-list-li-hidden-txt"
+                                            href="#">Страница товаров</a></li>
+                                    <li class="header-menu-list-li-hidden-li"><a class="header-menu-list-li-hidden-txt"
+                                            href="#">Страница акции</a></li>
+                                    <li class="header-menu-list-li-hidden-li"><a class="header-menu-list-li-hidden-txt"
+                                            href="#">Ошибка 404</a></li>
+                                    <li class="header-menu-list-li-hidden-li"><a class="header-menu-list-li-hidden-txt"
+                                            href="#">Оформление</a></li>
+                                    <li class="header-menu-list-li-hidden-li"><a class="header-menu-list-li-hidden-txt"
+                                            href="#">Сотрудни<wbr>чество</a></li>
+                                    <!--! Убрать эти элементы в конце-->
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -119,27 +143,40 @@
                     <!-- =======СДЕЛАТЬ ИЗ СПИСКА ССЫЛКИ============ -->
 
                     <ul class="footer-top-right ">
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#"> Акции и новости</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#"> Игры для праздника</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Развивающие игры</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Игры в дорогу</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#"> Акции и
+                                новости</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#"> Игры для
+                                праздника</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Развивающие
+                                игры</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Игры в дорогу
+                        </li></a>
                     </ul>
 
 
                     <ul class="footer-top-right">
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Отзывы</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Доставка и оплата</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Возврат</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Отзывы</li>
+                        </a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Доставка и
+                                оплата</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Возврат</li>
+                        </a>
                         <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">О нас</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Контакты</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Документы</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Контакты</li>
+                        </a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Документы</li>
+                        </a>
                     </ul>
 
                     <ul class="footer-top-block">
-                        <li class="footer-top-right-list bold"><a class="footer-top-right-list-color" href="#">Личный кабинет</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Партнерам</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Групповой заказ</li></a>
-                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Постоянный покупатель</li></a>
+                        <li class="footer-top-right-list bold"><a class="footer-top-right-list-color" href="#">Личный
+                                кабинет</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Партнерам</li>
+                        </a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Групповой
+                                заказ</li></a>
+                        <li class="footer-top-right-list"><a class="footer-top-right-list-color" href="#">Постоянный
+                                покупатель</li></a>
                         <li class="footer-top-right-list">
 
                             <a class="footer-top-social" href="#">

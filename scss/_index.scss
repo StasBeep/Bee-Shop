@@ -71,22 +71,27 @@
         }
 
 
-        &:nth-child(5) .header-btn-link-svg {
-            margin-top: 2px;
+        &:nth-child(5) {
+            .header-btn-link-svg {
+                margin-top: 2px;
+            }
         }
 
         &:hover {
             background-color: $orange;
-        }
 
-        &:hover .header-btn-link-svg {
-            fill: $white;
+            .header-btn-link-svg {
+                fill: $white;
+            }
         }
     }
 
     &-menu {
-        padding: 22px 0;
         background-color: $white-light;
+
+        &-container {
+            padding-right: 225px;
+        }
 
         &-list {
             display: flex;
@@ -96,11 +101,67 @@
             justify-content: flex-end;
 
             &-li {
-                margin-right: 36px;
+                padding: 22px;
+                box-sizing: border-box;
+
+                
+                &:nth-child(5) {
+                    position: relative;
+                }
+
+                &:hover {
+                    background-color: $main-background-one;
+
+                    .header-menu-list-li-link {
+                        color: $white-light;
+                    }
+                }
 
                 &-link {
                     @include font(400, 16px, 26px);
                     color: $black-grey;
+                    cursor: pointer;
+                }
+
+                &-inp {
+                    display: none;
+
+                    &:checked~ {
+                        .header-menu-list-li-hidden {
+                            display: block;
+                        }
+                    }
+                }
+
+                &-hidden {
+                    width: 135px;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    background-color: $white-light;
+                    position: absolute;
+                    top: 70px;
+                    right: 0px;
+                    display: none;
+
+
+                    &-li {
+                        padding: 10px 0 5px 18px;
+                        box-sizing: border-box;
+
+                        &:hover {
+                            background-color: $main-background-one;
+
+                            .header-menu-list-li-hidden-txt {
+                                color: $white-light;
+                            }
+                        }
+                    }
+
+                    &-txt {
+                        @include font(400, 16px, 26px);
+                        color: $black-grey;
+                    }
                 }
             }
         }
@@ -187,7 +248,7 @@
                     right: 15px;
                     fill: #a5aaaf;
                 }
-                
+
                 &-button:hover {
                     cursor: pointer;
                     fill: #5e6164;
@@ -210,8 +271,8 @@
             &-list {
                 margin-bottom: 16px;
 
-                &-color{
-                        color: $white;
+                &-color {
+                    color: $white;
                 }
             }
 
@@ -223,7 +284,7 @@
                 margin-bottom: 0;
             }
 
-            
+
         }
 
         &-block {
@@ -276,7 +337,7 @@
             &:hover {
                 fill: $light-grey;
             }
-    
+
             &:active {
                 fill: $white;
             }
