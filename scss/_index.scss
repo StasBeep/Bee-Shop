@@ -125,6 +125,12 @@
 
                 &-inp {
                     display: none;
+
+                    &:checked~ {
+                        .header-menu-list-li-hidden {
+                            display: block;
+                        }
+                    }
                 }
 
                 &-hidden {
@@ -136,6 +142,7 @@
                     position: absolute;
                     top: 70px;
                     right: 0px;
+                    display: none;
 
 
                     &-li {

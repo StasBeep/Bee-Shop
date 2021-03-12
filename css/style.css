@@ -243,6 +243,10 @@ button {
   display: none;
 }
 
+.header-menu-list-li-inp:checked ~ .header-menu-list-li-hidden {
+  display: block;
+}
+
 .header-menu-list-li-hidden {
   width: 135px;
   margin: 0;
@@ -253,6 +257,7 @@ button {
   position: absolute;
   top: 70px;
   right: 0px;
+  display: none;
 }
 
 .header-menu-list-li-hidden-li {
