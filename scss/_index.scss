@@ -118,10 +118,12 @@
         justify-content: space-between;
         
         &-title{
+            @include font(500, 44px, 52px);
             margin: 0;
             padding: 0;
+            padding-top: 120px;
             box-sizing: border-box;
-            @include font(500, 44px, 52px);
+
             
         }
     }
@@ -133,15 +135,72 @@
         box-sizing: border-box;
         @include font(500, 16px, 19px);
         text-transform: uppercase;
-        padding-top: 28px;
+        padding-top: 153px;
         color: $blush;
     }
 
-    // hjklhjlk;
 
     &-last{
+        display: block;
+        margin-top: 24px;
         @include font(400, 16px, 160%);
         color: $dark-grey;
+    }
+
+    &-reviews{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        &-card{
+            padding: 0 37px;
+            max-width: 564px;
+            height: 368px;
+            border: 1px solid #000;
+            // position: relative;
+
+            
+
+            &-img{
+                background-image: url(../img/reviews_page/reviews_img.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 121px;
+                height: 121px;
+            }
+
+            &-wrp{
+                // position: absolute;
+                // top: 0;
+                // left: 195px;
+
+            }
+
+            &-name{
+                @include font(500, 24px, 28px);
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                display: block;
+                color: $dark;
+                
+            }
+
+            &-stars{
+                display: block;
+            }
+            
+            &-text{
+                border: 1px solid #000;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+                
+                
+            }
+            
+        }
     }
 }
 

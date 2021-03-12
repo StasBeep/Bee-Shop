@@ -233,15 +233,16 @@ button {
 }
 
 .feedback-text-title {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: rubik;
   font-weight: 500;
   font-style: normal;
   font-size: 44px;
   line-height: 52px;
+  margin: 0;
+  padding: 0;
+  padding-top: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .feedback-link {
@@ -255,17 +256,67 @@ button {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  padding-top: 28px;
+  padding-top: 153px;
   color: #DB4E66;
 }
 
 .feedback-last {
+  display: block;
+  margin-top: 24px;
   font-family: rubik;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
   color: #5B636B;
+}
+
+.feedback-reviews {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feedback-reviews-card {
+  padding: 0 37px;
+  max-width: 564px;
+  height: 368px;
+  border: 1px solid #000;
+}
+
+.feedback-reviews-card-img {
+  background-image: url(../img/reviews_page/reviews_img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 121px;
+  height: 121px;
+}
+
+.feedback-reviews-card-name {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  color: #222528;
+}
+
+.feedback-reviews-card-stars {
+  display: block;
+}
+
+.feedback-reviews-card-text {
+  border: 1px solid #000;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer {
