@@ -184,12 +184,19 @@
     }
 
     &-title {
-        max-width: 888px;
+        @include font (500, 50px, 59px);
         margin-bottom: 16px;
+        text-align: center;
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.48);
+        color: $white-light;
 
         &-additional {
+            @include font (400, 16px, 26px);
             display: block;
             margin-bottom: 43px;
+            text-align: center;
+            color: $white-light;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
         }
     }
 

@@ -299,13 +299,28 @@ button {
 }
 
 .face-title {
-  max-width: 888px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 59px;
   margin-bottom: 16px;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.48);
+  color: #FAFAF9;
 }
 
 .face-title-additional {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
   display: block;
   margin-bottom: 43px;
+  text-align: center;
+  color: #FAFAF9;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
 }
 
 .face-btn {
