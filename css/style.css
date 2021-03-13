@@ -283,14 +283,6 @@ button {
   color: #222528;
 }
 
-.bold {
-  font-family: rubik;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 160%;
-}
-
 .footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -391,6 +383,7 @@ button {
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
+  min-width: 170px;
   margin: 0 50px 0 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -404,6 +397,14 @@ button {
 
 .footer-top-right-list-color {
   color: #FFFFFF;
+}
+
+.footer-top-right-list-color:hover {
+  font-family: rubik;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
 }
 
 .footer-top-right:nth-child(2) {
@@ -424,6 +425,7 @@ button {
   font-style: normal;
   font-size: 16px;
   line-height: 160%;
+  min-width: 220px;
 }
 
 .footer-top-social {
@@ -472,12 +474,12 @@ button {
   background: #FFFFFF;
 }
 
-.footer-top-social:active {
-  background: #90c1bf;
-}
-
 .footer-top-social:hover .footer-top-svg {
   fill: #90c1bf;
+}
+
+.footer-top-social:active {
+  background: #90c1bf;
 }
 
 .footer-top-social:active .footer-top-svg {

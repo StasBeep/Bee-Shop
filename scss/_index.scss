@@ -104,7 +104,7 @@
                 padding: 22px;
                 box-sizing: border-box;
 
-                
+
                 &:nth-child(5) {
                     position: relative;
                 }
@@ -171,12 +171,6 @@
 // end ====== header ================ end
 
 
-
-// ==========FOOTER-CORRECTIONS==========
-
-.bold {
-    @include font(700, 16px, 160%);
-}
 
 // ==========FOOTER-CORRECTIONS==========
 
@@ -262,17 +256,23 @@
         &-right {
 
             @include font(400, 16px, 160%);
-
+            min-width: 170px;
             margin: 0 50px 0 0;
             padding: 0;
             box-sizing: border-box;
             color: $white;
+
 
             &-list {
                 margin-bottom: 16px;
 
                 &-color {
                     color: $white;
+
+                    &:hover {
+                        @include font(700, 16px, 160%);
+
+                    }
                 }
             }
 
@@ -292,8 +292,10 @@
             margin-top: 0;
             margin-bottom: 0;
             color: $white;
-            @include font($size-format: 400, $fonts: 16px, $linehe: 160%);
+            @include font(400, 16px, 160%);
+            min-width: 220px;
         }
+
 
         // ===============FOOTER RIGHT MENU END================
 
@@ -345,19 +347,19 @@
 
         &-social:hover {
             background: $white;
+
+            .footer-top-svg {
+                fill: $light-grey;
+
+            }
         }
 
         &-social:active {
             background: $light-grey;
-        }
 
-        &-social:hover .footer-top-svg {
-            fill: $light-grey;
-
-        }
-
-        &-social:active .footer-top-svg {
-            fill: $white;
+            .footer-top-svg {
+                fill: $white;
+            }
         }
     }
 
@@ -387,7 +389,6 @@
     }
 
     // ===============FOOTER BOTTOM END==============
-
 }
 
 // ===============FOOTER END==============
