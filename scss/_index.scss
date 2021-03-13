@@ -211,7 +211,7 @@
         display: block;
         cursor: pointer;
         transition: transform 600ms ease,
-                    background-color 1s ease-out;
+            background-color 1s ease-out;
 
         &:hover {
             background-color: $green-comp-eff-pink;
@@ -221,6 +221,61 @@
         &:active {
             background-color: $pink;
             transform: scale(1);
+        }
+    }
+
+    &-messengers {
+        display: flex;
+        justify-content: flex-end;
+
+        &-link {
+            -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
+            -moz-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
+            box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.24);
+            display: inline-block;
+            width: 49px;
+            height: 49px;
+            background: $light-grey;
+            border-radius: 12px;
+            margin-right: 7px;
+            margin-top: 19px;
+
+            &:nth-child(2) {
+                & .face-messengers-link-svg {
+                    margin-left: 6.5px;
+                }
+            }
+
+            &:hover {
+                background: $white;
+    
+                & .face-messengers-link-svg {
+                    fill: $light-grey;
+    
+                }
+            }
+    
+            &:active {
+                background: $light-grey;
+    
+                & .face-messengers-link-svg {
+                    fill: $white;
+                }
+            }
+
+            &-svg {
+                fill: $white;
+                margin-top: 5px;
+                margin-left: 5px;
+
+                &:hover {
+                    fill: $light-grey;
+                }
+    
+                &:active {
+                    fill: $white;
+                }
+            }
         }
     }
 }
@@ -382,6 +437,23 @@
                 margin-left: 3px;
                 margin-bottom: 1px;
             }
+
+            &:hover {
+                background: $white;
+    
+                & .footer-top-svg {
+                    fill: $light-grey;
+    
+                }
+            }
+    
+            &:active {
+                background: $light-grey;
+    
+                & .footer-top-svg {
+                    fill: $white;
+                }
+            }
         }
 
 
@@ -396,23 +468,6 @@
             }
 
             &:active {
-                fill: $white;
-            }
-        }
-
-        &-social:hover {
-            background: $white;
-
-            .footer-top-svg {
-                fill: $light-grey;
-
-            }
-        }
-
-        &-social:active {
-            background: $light-grey;
-
-            .footer-top-svg {
                 fill: $white;
             }
         }

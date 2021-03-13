@@ -352,6 +352,61 @@ button {
           transform: scale(1);
 }
 
+.face-messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.face-messengers-link {
+  -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
+  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.24);
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+  background: #90c1bf;
+  border-radius: 12px;
+  margin-right: 7px;
+  margin-top: 19px;
+}
+
+.face-messengers-link:nth-child(2) .face-messengers-link-svg {
+  margin-left: 6.5px;
+}
+
+.face-messengers-link:hover {
+  background: #FFFFFF;
+}
+
+.face-messengers-link:hover .face-messengers-link-svg {
+  fill: #90c1bf;
+}
+
+.face-messengers-link:active {
+  background: #90c1bf;
+}
+
+.face-messengers-link:active .face-messengers-link-svg {
+  fill: #FFFFFF;
+}
+
+.face-messengers-link-svg {
+  fill: #FFFFFF;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.face-messengers-link-svg:hover {
+  fill: #90c1bf;
+}
+
+.face-messengers-link-svg:active {
+  fill: #FFFFFF;
+}
+
 .footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -525,20 +580,6 @@ button {
   margin-bottom: 1px;
 }
 
-.footer-top-svg {
-  fill: #FFFFFF;
-  margin-top: 4px;
-  margin-left: 4px;
-}
-
-.footer-top-svg:hover {
-  fill: #90c1bf;
-}
-
-.footer-top-svg:active {
-  fill: #FFFFFF;
-}
-
 .footer-top-social:hover {
   background: #FFFFFF;
 }
@@ -552,6 +593,20 @@ button {
 }
 
 .footer-top-social:active .footer-top-svg {
+  fill: #FFFFFF;
+}
+
+.footer-top-svg {
+  fill: #FFFFFF;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.footer-top-svg:hover {
+  fill: #90c1bf;
+}
+
+.footer-top-svg:active {
   fill: #FFFFFF;
 }
 
