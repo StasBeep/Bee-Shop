@@ -345,6 +345,10 @@ button {
   margin-bottom: 20px;
 }
 
+.qestions-button {
+  text-transform: uppercase;
+}
+
 .feedback {
   width: 100%;
 }
