@@ -173,9 +173,15 @@
 // ============ face ====================
 .face {
     margin-top: 210px;
-    padding-top: 235px;
-    padding-bottom: 39px;
-    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-face.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-seccont {
+        padding-top: 235px;
+        padding-bottom: 39px;
+        box-sizing: border-box;
+    }
 
     &-title {
         max-width: 888px;
@@ -191,6 +197,7 @@
         margin-bottom: 68px;
     }
 }
+
 // end ======== face ================ end
 
 // ==========FOOTER-CORRECTIONS==========
