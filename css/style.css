@@ -62,6 +62,13 @@ button {
 }*/
 @font-face {
   font-family: rubik;
+  src: url(../fonts/rubik-light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: rubik;
   src: url(../fonts/rubik-regular.ttf);
   font-weight: 400;
   font-style: normal;
@@ -279,10 +286,17 @@ button {
 }
 
 .feedback-reviews-card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 37px;
   max-width: 564px;
-  height: 368px;
   border: 1px solid #000;
+}
+
+.feedback-reviews-card-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .feedback-reviews-card-img {
@@ -291,6 +305,7 @@ button {
   background-size: contain;
   width: 121px;
   height: 121px;
+  margin: 36px 0 26px 0;
 }
 
 .feedback-reviews-card-name {
@@ -299,7 +314,7 @@ button {
   font-style: normal;
   font-size: 24px;
   line-height: 28px;
-  margin: 0;
+  margin: 38px 0 0 31px;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -307,11 +322,45 @@ button {
   color: #222528;
 }
 
-.feedback-reviews-card-stars {
+.feedback-reviews-card-time {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #A5AAAF;
+  margin: 11px 0 6px 31px;
   display: block;
 }
 
+.feedback-reviews-card-five-big {
+  font-family: rubik;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 50px;
+  margin: 11px 0 0 31px;
+  color: #ff9c1a;
+}
+
+.feedback-reviews-card-five-small {
+  margin-right: 14px;
+  font-family: rubik;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 50px;
+  color: #ff9c1a;
+}
+
 .feedback-reviews-card-text {
+  width: 491px;
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #222528;
   border: 1px solid #000;
   margin: 0;
   padding: 0;

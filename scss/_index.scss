@@ -153,12 +153,15 @@
         box-sizing: border-box;
         
         &-card{
+            box-sizing: border-box;
             padding: 0 37px;
             max-width: 564px;
-            height: 368px;
             border: 1px solid #000;
-            // position: relative;
+            
 
+            &-wrp{
+                display: flex;
+            }
             
 
             &-img{
@@ -167,18 +170,16 @@
                 background-size: contain;
                 width: 121px;
                 height: 121px;
+                margin: 36px 0 26px 0;
             }
 
-            &-wrp{
-                // position: absolute;
-                // top: 0;
-                // left: 195px;
-
+            &-block{
+                
             }
 
             &-name{
                 @include font(500, 24px, 28px);
-                margin: 0;
+                margin: 38px 0 0 31px;
                 padding: 0;
                 box-sizing: border-box;
                 display: block;
@@ -186,17 +187,37 @@
                 
             }
 
-            &-stars{
+            &-time{
+                @include font(400, 16px, 160%);
+                color: $grey;
+                margin: 11px 0 6px 31px;
                 display: block;
             }
+
+            &-five{
+
+                &-big{
+                    @include font(300, 42px, 50px);
+                    margin: 11px 0 0 31px;
+                    color: $main-background-two;
+                }
+
+                &-small{
+                    margin-right: 14px;
+                    @include font(300, 22px, 50px);
+                    color: $main-background-two;
+                }
+            }
+            
             
             &-text{
+                width: 491px;
+                @include font(400, 16px, 160%);
+                color: $dark;
                 border: 1px solid #000;
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                
-                
                 
             }
             
