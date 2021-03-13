@@ -324,7 +324,32 @@ button {
 }
 
 .face-btn {
-  margin-bottom: 68px;
+  padding: 18px 92px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #DB4E66;
+  -webkit-box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
+          box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
+  border-radius: 14px;
+  margin: 0 auto 68px;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease-out, -webkit-transform 600ms ease;
+  transition: background-color 1s ease-out, -webkit-transform 600ms ease;
+  transition: transform 600ms ease, background-color 1s ease-out;
+  transition: transform 600ms ease, background-color 1s ease-out, -webkit-transform 600ms ease;
+}
+
+.face-btn:hover {
+  background-color: #6AC747;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.face-btn:active {
+  background-color: #DB4E66;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .footer {
