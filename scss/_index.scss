@@ -142,7 +142,7 @@
 
     &-last{
         display: block;
-        margin-top: 24px;
+        margin: 24px 0 59px 0;
         @include font(400, 16px, 160%);
         color: $dark-grey;
     }
@@ -151,14 +151,19 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        
         
         &-card{
+            box-shadow: 0px 4px 9px #D3D3D3;
+            border-radius: 14px;
             box-sizing: border-box;
             padding: 0 37px;
             max-width: 564px;
-            border: 1px solid #000;
+            margin: 0 35px 56px 0;
             
-
+            
             &-wrp{
                 display: flex;
             }
@@ -220,8 +225,23 @@
                 box-sizing: border-box;
                 
             }
+
+            &-link{
+                @include font(400, 22px, 50px);
+                color: $main-background-two;
+                text-decoration: underline;
+            }
             
         }
+        
+        &-card:nth-child(2){
+            margin-right: 0;
+        }
+
+        &-card:nth-child(4){
+            margin-right: 0;
+        }
+
     }
 }
 
