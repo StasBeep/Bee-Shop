@@ -324,6 +324,11 @@ button {
 }
 
 .face-btn {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
   padding: 18px 92px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -369,12 +374,15 @@ button {
   height: 49px;
   background: #90c1bf;
   border-radius: 12px;
-  margin-right: 7px;
-  margin-top: 19px;
+  margin-right: 24px;
 }
 
 .face-messengers-link:nth-child(2) .face-messengers-link-svg {
   margin-left: 6.5px;
+}
+
+.face-messengers-link:last-child {
+  margin-right: 0;
 }
 
 .face-messengers-link:hover {

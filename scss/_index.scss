@@ -201,6 +201,7 @@
     }
 
     &-btn {
+        @include font (500, 16px, 19px);
         padding: 18px 92px;
         text-transform: uppercase;
         color: $white;
@@ -237,13 +238,16 @@
             height: 49px;
             background: $light-grey;
             border-radius: 12px;
-            margin-right: 7px;
-            margin-top: 19px;
+            margin-right: 24px;
 
             &:nth-child(2) {
                 & .face-messengers-link-svg {
                     margin-left: 6.5px;
                 }
+            }
+
+            &:last-child {
+                margin-right: 0;
             }
 
             &:hover {
