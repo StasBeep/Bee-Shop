@@ -170,7 +170,51 @@
 
 // end ====== header ================ end
 
+//  ====== qestions ================ 
+.qestions{
 
+    background: rgba(245, 245, 245, 0.63);
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    box-sizing: border-box;
+
+    &-title{
+        @include font(500, 44px, 52px);
+        margin: 82px 0 92px 0;
+        color: $dark;
+    }
+
+    //  ====== frequen qestions ================ 
+
+    &-frequent{
+        
+        &-title{
+            @include font(500, 30px, 36px);
+            color: $dark;
+            list-style-type: none;
+            cursor: pointer;
+            outline: none;
+
+        }
+        
+        &-text{
+            @include font(400, 16px, 160%);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    }
+
+    &-frequent::before{
+        content: "+";
+    }
+
+    //  ====== frequen qestions end ================ 
+}
+
+//  ====== qestions end ============
+
+
+//  ====== reviews ================ 
 .feedback{
     width: 100%;
     
@@ -208,6 +252,8 @@
         color: $dark-grey;
     }
 
+    //  ====== reviews-cards ================ 
+
     &-reviews{
         margin: 0;
         padding: 0;
@@ -231,12 +277,13 @@
             
 
             &-img{
-                background-image: url(../img/reviews_page/reviews_img.png);
+                background: url(../img/reviews_page/reviews_img.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 121px;
                 height: 121px;
                 margin: 36px 0 26px 0;
+                
             }
 
             &-block{
@@ -274,7 +321,7 @@
                     color: $main-background-two;
                 }
             }
-            
+            //  ====== reviews-cards END================ 
             
             &-text{
                 width: 491px;
@@ -304,7 +351,7 @@
         }
 
     }
-}
+}       //  ====== reviews END ================ 
 
 // ===============FOOTER=================
 
