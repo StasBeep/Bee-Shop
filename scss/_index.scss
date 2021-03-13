@@ -65,11 +65,9 @@
         border-radius: 12px;
         padding: 1px 2px 0;
 
-
         &-svg {
             fill: $orange;
         }
-
 
         &:nth-child(5) {
             .header-btn-link-svg {
@@ -104,7 +102,6 @@
                 padding: 22px;
                 box-sizing: border-box;
 
-
                 &:nth-child(5) {
                     position: relative;
                 }
@@ -126,7 +123,7 @@
                 &-inp {
                     display: none;
 
-                    &:checked~ {
+                    &:checked ~ {
                         .header-menu-list-li-hidden {
                             display: block;
                         }
@@ -143,7 +140,6 @@
                     top: 70px;
                     right: 0px;
                     display: none;
-
 
                     &-li {
                         padding: 10px 0 5px 18px;
@@ -170,71 +166,78 @@
 
 // end ====== header ================ end
 
-//  ====== qestions ================ 
-.qestions{
-
+//  ====== qestions ================
+.qestions {
     background: rgba(245, 245, 245, 0.63);
     border: 1px solid rgba(0, 0, 0, 0.18);
     box-sizing: border-box;
 
-    &-title{
+    &-title {
         @include font(500, 44px, 52px);
         margin: 82px 0 92px 0;
         color: $dark;
     }
 
-    //  ====== frequen qestions ================ 
+    //  ====== frequen qestions ================
 
-    &-frequent{
-        
-        &-title{
+    &-frequent {
+        &[open] {
+            & .qestions-frequent-title:before {
+                content: "\2212";
+                padding-right: 8px;
+                width: 4px;
+                height: 4px;
+            }
+        }
+
+        &-title {
             @include font(500, 30px, 36px);
             color: $dark;
             list-style-type: none;
             cursor: pointer;
             outline: none;
+            padding-bottom: 48px;
 
+            &::before {
+                content: "\002b";
+                padding-right: 8px;
+                width: 4px;
+                height: 4px;
+            }
         }
-        
-        &-text{
+
+        &-text {
             @include font(400, 16px, 160%);
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            margin-bottom: 20px;
         }
     }
 
-    &-frequent::before{
-        content: "+";
-    }
-
-    //  ====== frequen qestions end ================ 
+    //  ====== frequen qestions end ================
 }
 
 //  ====== qestions end ============
 
-
-//  ====== reviews ================ 
-.feedback{
+//  ====== reviews ================
+.feedback {
     width: 100%;
-    
-    &-text{
+
+    &-text {
         display: flex;
         justify-content: space-between;
-        
-        &-title{
+
+        &-title {
             @include font(500, 44px, 52px);
             margin: 0;
             padding: 0;
             padding-top: 120px;
             box-sizing: border-box;
-
-            
         }
     }
 
-
-    &-link{
+    &-link {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -244,114 +247,102 @@
         color: $blush;
     }
 
-
-    &-last{
+    &-last {
         display: block;
         margin: 24px 0 59px 0;
         @include font(400, 16px, 160%);
         color: $dark-grey;
     }
 
-    //  ====== reviews-cards ================ 
+    //  ====== reviews-cards ================
 
-    &-reviews{
+    &-reviews {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        
-        
-        &-card{
-            box-shadow: 0px 4px 9px #D3D3D3;
+
+        &-card {
+            box-shadow: 0px 4px 9px #d3d3d3;
             border-radius: 14px;
             box-sizing: border-box;
             padding: 0 37px;
             max-width: 564px;
             margin: 0 35px 56px 0;
-            
-            
-            &-wrp{
+
+            &:nth-child(2) {
+                margin-right: 0;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0;
+            }
+
+            &-wrp {
                 display: flex;
             }
-            
 
-            &-img{
+            &-img {
                 background: url(../img/reviews_page/reviews_img.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 121px;
                 height: 121px;
                 margin: 36px 0 26px 0;
-                
             }
 
-            &-block{
-                
+            &-block {
             }
 
-            &-name{
+            &-name {
                 @include font(500, 24px, 28px);
                 margin: 38px 0 0 31px;
                 padding: 0;
                 box-sizing: border-box;
                 display: block;
                 color: $dark;
-                
             }
 
-            &-time{
+            &-time {
                 @include font(400, 16px, 160%);
                 color: $grey;
                 margin: 11px 0 6px 31px;
                 display: block;
             }
 
-            &-five{
-
-                &-big{
+            &-five {
+                &-big {
                     @include font(300, 42px, 50px);
                     margin: 11px 0 0 31px;
                     color: $main-background-two;
                 }
 
-                &-small{
+                &-small {
                     margin-right: 14px;
                     @include font(300, 22px, 50px);
                     color: $main-background-two;
                 }
             }
-            //  ====== reviews-cards END================ 
-            
-            &-text{
+            //  ====== reviews-cards END================
+
+            &-text {
                 width: 491px;
                 @include font(400, 16px, 160%);
                 color: $dark;
-                border: 1px solid #000;
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                
             }
 
-            &-link{
+            &-link {
                 @include font(400, 22px, 50px);
                 color: $main-background-two;
                 text-decoration: underline;
             }
-            
         }
-        
-        &-card:nth-child(2){
-            margin-right: 0;
-        }
-
-        &-card:nth-child(4){
-            margin-right: 0;
-        }
-
     }
-}       //  ====== reviews END ================ 
+} //  ====== reviews END ================
 
 // ===============FOOTER=================
 
@@ -373,7 +364,6 @@
                 width: 265px;
                 background: $peach;
                 border-radius: 10px;
-
 
                 &-text {
                     display: block;
@@ -407,7 +397,6 @@
                 padding: 14px 106px 13px 20px;
                 position: relative;
 
-
                 &-input {
                     color: $grey;
                     box-sizing: border-box;
@@ -434,15 +423,12 @@
 
         // ===============FOOTER RIGHT MENU================
         &-right {
-
             @include font(400, 16px, 160%);
             min-width: 170px;
             margin: 0 50px 0 0;
             padding: 0;
             box-sizing: border-box;
             color: $white;
-            
-
 
             &-list {
                 margin-bottom: 16px;
@@ -452,10 +438,8 @@
 
                     &:hover {
                         @include font(700, 16px, 160%);
-
                     }
                 }
-
             }
 
             &:nth-child(2) {
@@ -465,8 +449,6 @@
             &:nth-child(3) .footer-top-right-list:nth-child(6) {
                 margin-bottom: 0;
             }
-
-
         }
 
         &-block {
@@ -477,7 +459,6 @@
             @include font(400, 16px, 160%);
             min-width: 220px;
         }
-
 
         // ===============FOOTER RIGHT MENU END================
 
@@ -511,12 +492,10 @@
             }
         }
 
-
         &-svg {
             fill: $white;
             margin-top: 4px;
             margin-left: 4px;
-
 
             &:hover {
                 fill: $light-grey;
@@ -532,7 +511,6 @@
 
             .footer-top-svg {
                 fill: $light-grey;
-
             }
         }
 
