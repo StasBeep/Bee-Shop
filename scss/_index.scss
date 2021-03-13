@@ -222,6 +222,7 @@
 
     //  ====== Button ================
         &-button{
+            @include font(500, 16px, 19px);
             text-transform: uppercase;
             background: $blush;
             box-shadow: 2px 4px 9px #FBCCD4;
