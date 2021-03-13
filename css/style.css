@@ -285,6 +285,10 @@ button {
 
 .face {
   margin-top: 210px;
+  padding-top: 235px;
+  padding-bottom: 39px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .footer {
