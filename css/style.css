@@ -312,6 +312,10 @@ button {
   height: 4px;
 }
 
+.qestions-frequent:nth-child(7) {
+  margin-bottom: 80px;
+}
+
 .qestions-frequent-title {
   font-family: rubik;
   font-weight: 500;
@@ -322,7 +326,7 @@ button {
   list-style-type: none;
   cursor: pointer;
   outline: none;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .qestions-frequent-title::before {
@@ -347,6 +351,14 @@ button {
 
 .qestions-button {
   text-transform: uppercase;
+  background: #DB4E66;
+  -webkit-box-shadow: 2px 4px 9px #FBCCD4;
+          box-shadow: 2px 4px 9px #FBCCD4;
+  border-radius: 14px;
+  color: #FFFFFF;
+  padding: 18px 68px;
+  cursor: pointer;
+  margin-bottom: 88px;
 }
 
 .feedback {

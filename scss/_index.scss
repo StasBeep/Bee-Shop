@@ -190,13 +190,18 @@
             }
         }
 
+        &:nth-child(7){
+            margin-bottom: 80px;
+        } 
+
         &-title {
             @include font(500, 30px, 36px);
             color: $dark;
             list-style-type: none;
             cursor: pointer;
             outline: none;
-            padding-bottom: 48px;
+            margin-bottom: 48px;
+
 
             &::before {
                 content: "\002b";
@@ -218,6 +223,13 @@
     //  ====== Button ================
         &-button{
             text-transform: uppercase;
+            background: $blush;
+            box-shadow: 2px 4px 9px #FBCCD4;
+            border-radius: 14px;
+            color: $white;
+            padding: 18px 68px;
+            cursor: pointer;
+            margin-bottom: 88px;
         }
     //  ====== Button End ================
 
