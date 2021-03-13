@@ -62,6 +62,13 @@ button {
 }*/
 @font-face {
   font-family: rubik;
+  src: url(../fonts/rubik-light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: rubik;
   src: url(../fonts/rubik-regular.ttf);
   font-weight: 400;
   font-style: normal;
@@ -96,8 +103,6 @@ button {
   padding: 42px 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: fixed;
-  z-index: 99;
   width: 100%;
 }
 
@@ -283,137 +288,7 @@ button {
   color: #222528;
 }
 
-.face {
-  margin-top: 210px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/background-face.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-face.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.face-seccont {
-  padding-top: 235px;
-  padding-bottom: 39px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.face-title {
-  font-family: rubik;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 59px;
-  margin-bottom: 16px;
-  text-align: center;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.48);
-  color: #FAFAF9;
-}
-
-.face-title-additional {
-  font-family: rubik;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 26px;
-  display: block;
-  margin-bottom: 43px;
-  text-align: center;
-  color: #FAFAF9;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
-}
-
-.face-btn {
-  font-family: rubik;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 18px 92px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #DB4E66;
-  -webkit-box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
-          box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
-  border-radius: 14px;
-  margin: 0 auto 68px;
-  display: block;
-  cursor: pointer;
-  -webkit-transition: background-color 1s ease-out, -webkit-transform 600ms ease;
-  transition: background-color 1s ease-out, -webkit-transform 600ms ease;
-  transition: transform 600ms ease, background-color 1s ease-out;
-  transition: transform 600ms ease, background-color 1s ease-out, -webkit-transform 600ms ease;
-}
-
-.face-btn:hover {
-  background-color: #6AC747;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.face-btn:active {
-  background-color: #DB4E66;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.face-messengers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.face-messengers-link {
-  -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
-  box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.24);
-  display: inline-block;
-  width: 49px;
-  height: 49px;
-  background: #90c1bf;
-  border-radius: 12px;
-  margin-right: 24px;
-}
-
-.face-messengers-link:nth-child(2) .face-messengers-link-svg {
-  margin-left: 6.5px;
-}
-
-.face-messengers-link:last-child {
-  margin-right: 0;
-}
-
-.face-messengers-link:hover {
-  background: #FFFFFF;
-}
-
-.face-messengers-link:hover .face-messengers-link-svg {
-  fill: #90c1bf;
-}
-
-.face-messengers-link:active {
-  background: #90c1bf;
-}
-
-.face-messengers-link:active .face-messengers-link-svg {
-  fill: #FFFFFF;
-}
-
-.face-messengers-link-svg {
-  fill: #FFFFFF;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-.face-messengers-link-svg:hover {
-  fill: #90c1bf;
-}
-
-.face-messengers-link-svg:active {
-  fill: #FFFFFF;
-}
 
 .footer {
   -webkit-box-sizing: border-box;
