@@ -166,6 +166,124 @@
 
 // end ====== header ================ end
 
+
+// ============ face ====================
+.face {
+    margin-top: 210px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-face.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-seccont {
+        padding-top: 235px;
+        padding-bottom: 39px;
+        box-sizing: border-box;
+    }
+
+    &-title {
+        @include font (500, 50px, 59px);
+        margin-bottom: 16px;
+        text-align: center;
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.48);
+        color: $white-light;
+
+        &-additional {
+            @include font (400, 16px, 26px);
+            display: block;
+            margin-bottom: 43px;
+            text-align: center;
+            color: $white-light;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
+        }
+    }
+
+    &-btn {
+        @include font (500, 16px, 19px);
+        padding: 18px 92px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $pink;
+        box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
+        border-radius: 14px;
+        margin: 0 auto 68px;
+        display: block;
+        cursor: pointer;
+        transition: transform 600ms ease,
+            background-color 1s ease-out;
+
+        &:hover {
+            background-color: $green-comp-eff-pink;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            background-color: $pink;
+            transform: scale(1);
+        }
+    }
+
+    &-messengers {
+        display: flex;
+        justify-content: flex-end;
+
+        &-link {
+            -webkit-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
+            -moz-box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.69);
+            box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.24);
+            display: inline-block;
+            width: 49px;
+            height: 49px;
+            background: $light-grey;
+            border-radius: 12px;
+            margin-right: 24px;
+
+            &:nth-child(2) {
+                & .face-messengers-link-svg {
+                    margin-left: 6.5px;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+                //Не сливается
+            }
+
+            &:hover {
+                background: $white;
+    
+                & .face-messengers-link-svg {
+                    fill: $light-grey;
+    
+                }
+            }
+    
+            &:active {
+                background: $light-grey;
+    
+                & .face-messengers-link-svg {
+                    fill: $white;
+                }
+            }
+
+            &-svg {
+                fill: $white;
+                margin-top: 5px;
+                margin-left: 5px;
+
+                &:hover {
+                    fill: $light-grey;
+                }
+    
+                &:active {
+                    fill: $white;
+                }
+            }
+        }
+    }
+}
+
+// end ======== face ================ end
+
 //  ====== qestions ================
 .qestions {
     background: rgba(245, 245, 245, 0.63);
@@ -510,6 +628,23 @@
                 margin-left: 3px;
                 margin-bottom: 1px;
             }
+
+            &:hover {
+                background: $white;
+    
+                & .footer-top-svg {
+                    fill: $light-grey;
+    
+                }
+            }
+    
+            &:active {
+                background: $light-grey;
+    
+                & .footer-top-svg {
+                    fill: $white;
+                }
+            }
         }
 
         &-svg {
@@ -522,22 +657,6 @@
             }
 
             &:active {
-                fill: $white;
-            }
-        }
-
-        &-social:hover {
-            background: $white;
-
-            .footer-top-svg {
-                fill: $light-grey;
-            }
-        }
-
-        &-social:active {
-            background: $light-grey;
-
-            .footer-top-svg {
                 fill: $white;
             }
         }
