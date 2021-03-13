@@ -5,9 +5,9 @@
     background: linear-gradient(92.55deg, $main-background-one 32.31%, $main-background-two 64.34%);
     padding: 42px 0 0;
     box-sizing: border-box;
-    position: fixed;
+    // position: fixed;
     // Внимание! меню должно быть выше, чем другие блоки
-    z-index: 99;
+    // z-index: 99;
     width: 100%;
 
     &-flx {
@@ -171,8 +171,140 @@
 // end ====== header ================ end
 
 
+.feedback{
+    width: 100%;
+    
+    &-text{
+        display: flex;
+        justify-content: space-between;
+        
+        &-title{
+            @include font(500, 44px, 52px);
+            margin: 0;
+            padding: 0;
+            padding-top: 120px;
+            box-sizing: border-box;
 
-// ==========FOOTER-CORRECTIONS==========
+            
+        }
+    }
+
+
+    &-link{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        @include font(500, 16px, 19px);
+        text-transform: uppercase;
+        padding-top: 153px;
+        color: $blush;
+    }
+
+
+    &-last{
+        display: block;
+        margin: 24px 0 59px 0;
+        @include font(400, 16px, 160%);
+        color: $dark-grey;
+    }
+
+    &-reviews{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+        &-card{
+            box-shadow: 0px 4px 9px #D3D3D3;
+            border-radius: 14px;
+            box-sizing: border-box;
+            padding: 0 37px;
+            max-width: 564px;
+            margin: 0 35px 56px 0;
+            
+            
+            &-wrp{
+                display: flex;
+            }
+            
+
+            &-img{
+                background-image: url(../img/reviews_page/reviews_img.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 121px;
+                height: 121px;
+                margin: 36px 0 26px 0;
+            }
+
+            &-block{
+                
+            }
+
+            &-name{
+                @include font(500, 24px, 28px);
+                margin: 38px 0 0 31px;
+                padding: 0;
+                box-sizing: border-box;
+                display: block;
+                color: $dark;
+                
+            }
+
+            &-time{
+                @include font(400, 16px, 160%);
+                color: $grey;
+                margin: 11px 0 6px 31px;
+                display: block;
+            }
+
+            &-five{
+
+                &-big{
+                    @include font(300, 42px, 50px);
+                    margin: 11px 0 0 31px;
+                    color: $main-background-two;
+                }
+
+                &-small{
+                    margin-right: 14px;
+                    @include font(300, 22px, 50px);
+                    color: $main-background-two;
+                }
+            }
+            
+            
+            &-text{
+                width: 491px;
+                @include font(400, 16px, 160%);
+                color: $dark;
+                border: 1px solid #000;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+            }
+
+            &-link{
+                @include font(400, 22px, 50px);
+                color: $main-background-two;
+                text-decoration: underline;
+            }
+            
+        }
+        
+        &-card:nth-child(2){
+            margin-right: 0;
+        }
+
+        &-card:nth-child(4){
+            margin-right: 0;
+        }
+
+    }
+}
 
 // ===============FOOTER=================
 
@@ -194,6 +326,7 @@
                 width: 265px;
                 background: $peach;
                 border-radius: 10px;
+
 
                 &-text {
                     display: block;
@@ -261,6 +394,7 @@
             padding: 0;
             box-sizing: border-box;
             color: $white;
+            
 
 
             &-list {
@@ -274,6 +408,7 @@
 
                     }
                 }
+
             }
 
             &:nth-child(2) {

@@ -9,9 +9,14 @@ $white-light: #FAFAF9;
 
 $brown: #884900;
 
+$blush: #DB4E66;
+
+$dark: #222528;
+
 $grey: #A5AAAF;
 $light-grey: #90c1bf;
 $lighter-grey:#CED0D2;
+$dark-grey: #5B636B;
 
 // Переменные цвета фона
 $main-background-one: #f2b236;
@@ -28,7 +33,7 @@ $orange: #F2B236;
     /*Максимальная ширина страницы и выравнивание содержимого по центру*/
     width: $wrapper-width;
     margin: 0 auto;
-
+    
     //Отступы по краям
     &-container {
         padding: 0 $wrapper-container-left-right;
