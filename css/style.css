@@ -191,8 +191,11 @@ button {
 }
 
 .header-menu {
-  padding: 22px 0;
   background-color: #FAFAF9;
+}
+
+.header-menu-container {
+  padding-right: 225px;
 }
 
 .header-menu-list {
@@ -209,10 +212,69 @@ button {
 }
 
 .header-menu-list-li {
-  margin-right: 36px;
+  padding: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-menu-list-li:nth-child(5) {
+  position: relative;
+}
+
+.header-menu-list-li:hover {
+  background-color: #f2b236;
+}
+
+.header-menu-list-li:hover .header-menu-list-li-link {
+  color: #FAFAF9;
 }
 
 .header-menu-list-li-link {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #222528;
+  cursor: pointer;
+}
+
+.header-menu-list-li-inp {
+  display: none;
+}
+
+.header-menu-list-li-inp:checked ~ .header-menu-list-li-hidden {
+  display: block;
+}
+
+.header-menu-list-li-hidden {
+  width: 135px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FAFAF9;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  display: none;
+}
+
+.header-menu-list-li-hidden-li {
+  padding: 10px 0 5px 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-menu-list-li-hidden-li:hover {
+  background-color: #f2b236;
+}
+
+.header-menu-list-li-hidden-li:hover .header-menu-list-li-hidden-txt {
+  color: #FAFAF9;
+}
+
+.header-menu-list-li-hidden-txt {
   font-family: rubik;
   font-weight: 400;
   font-style: normal;
@@ -412,12 +474,12 @@ button {
   background: #FFFFFF;
 }
 
-.footer-top-social:active {
-  background: #90c1bf;
-}
-
 .footer-top-social:hover .footer-top-svg {
   fill: #90c1bf;
+}
+
+.footer-top-social:active {
+  background: #90c1bf;
 }
 
 .footer-top-social:active .footer-top-svg {
