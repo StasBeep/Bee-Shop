@@ -291,6 +291,20 @@ button {
           box-sizing: border-box;
 }
 
+.face-title {
+  max-width: 888px;
+  margin-bottom: 16px;
+}
+
+.face-title-additional {
+  display: block;
+  margin-bottom: 43px;
+}
+
+.face-btn {
+  margin-bottom: 68px;
+}
+
 .footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

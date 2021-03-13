@@ -176,6 +176,20 @@
     padding-top: 235px;
     padding-bottom: 39px;
     box-sizing: border-box;
+
+    &-title {
+        max-width: 888px;
+        margin-bottom: 16px;
+
+        &-additional {
+            display: block;
+            margin-bottom: 43px;
+        }
+    }
+
+    &-btn {
+        margin-bottom: 68px;
+    }
 }
 // end ======== face ================ end
 
