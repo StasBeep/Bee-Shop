@@ -123,7 +123,7 @@
                 &-inp {
                     display: none;
 
-                    &:checked ~ {
+                    &:checked~ {
                         .header-menu-list-li-hidden {
                             display: block;
                         }
@@ -228,16 +228,16 @@
 
             &:hover {
                 background: $white;
-    
+
                 & .face-messengers-link-svg {
                     fill: $light-grey;
-    
+
                 }
             }
-    
+
             &:active {
                 background: $light-grey;
-    
+
                 & .face-messengers-link-svg {
                     fill: $white;
                 }
@@ -251,7 +251,7 @@
                 &:hover {
                     fill: $light-grey;
                 }
-    
+
                 &:active {
                     fill: $white;
                 }
@@ -261,6 +261,34 @@
 }
 
 // end ======== face ================ end
+
+
+// ============ discount =================
+.discount {
+    padding-top: 48px;
+    padding-bottom: 82px;
+    box-sizing: border-box;
+
+    &-up {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 38px;
+
+        &-stocks {
+            display: block;
+            @include font(400, 16px, 26px);
+            color: $dark-grey;
+        }
+
+        &-link {
+            @include font(500, 16px, 19px);
+            color: $pink;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// end ======== discount ============= end
 
 //  ====== qestions ================
 .qestions {
@@ -286,9 +314,9 @@
             }
         }
 
-        &:nth-child(7){
+        &:nth-child(7) {
             margin-bottom: 80px;
-        } 
+        }
 
         &-title {
             @include font(500, 30px, 36px);
@@ -315,20 +343,22 @@
             margin-bottom: 20px;
         }
     }
+
     // test
 
     //  ====== Button ================
-        &-button{
-            @include font(500, 16px, 19px);
-            text-transform: uppercase;
-            background: $pink;
-            box-shadow: 2px 4px 9px #FBCCD4;
-            border-radius: 14px;
-            color: $white;
-            padding: 18px 68px;
-            cursor: pointer;
-            margin-bottom: 88px;
-        }
+    &-button {
+        @include font(500, 16px, 19px);
+        text-transform: uppercase;
+        background: $pink;
+        box-shadow: 2px 4px 9px #FBCCD4;
+        border-radius: 14px;
+        color: $white;
+        padding: 18px 68px;
+        cursor: pointer;
+        margin-bottom: 88px;
+    }
+
     //  ====== Button End ================
 
     //  ====== frequen qestions end ================
@@ -437,6 +467,7 @@
                     color: $main-background-two;
                 }
             }
+
             //  ====== reviews-cards END================
 
             &-text {
@@ -455,7 +486,9 @@
             }
         }
     }
-} //  ====== reviews END ================
+}
+
+//  ====== reviews END ================
 
 // ===============FOOTER=================
 
@@ -606,16 +639,16 @@
 
             &:hover {
                 background: $white;
-    
+
                 & .footer-top-svg {
                     fill: $light-grey;
-    
+
                 }
             }
-    
+
             &:active {
                 background: $light-grey;
-    
+
                 & .footer-top-svg {
                     fill: $white;
                 }

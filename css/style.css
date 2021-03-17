@@ -437,6 +437,43 @@ button {
   fill: #FFFFFF;
 }
 
+.discount {
+  padding-top: 48px;
+  padding-bottom: 82px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.discount-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.discount-up-stocks {
+  display: block;
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5B636B;
+}
+
+.discount-up-link {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #DB4E66;
+  text-transform: uppercase;
+}
+
 .qestions {
   background: rgba(245, 245, 245, 0.63);
   border: 1px solid rgba(0, 0, 0, 0.18);
