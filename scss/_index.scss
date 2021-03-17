@@ -7,7 +7,7 @@
     box-sizing: border-box;
     position: fixed;
     // Внимание! меню должно быть выше, чем другие блоки
-    // z-index: 99;
+    z-index: 99;
     width: 100%;
 
     &-flx {
