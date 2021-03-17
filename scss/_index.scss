@@ -286,7 +286,9 @@
 
 //  ====== qest =====================
 .quest{
-    
+    background-color: $white-light;
+    width: 100%;
+
     &-title {
         @include font(500, 44px, 52px);
         color: $dark;
@@ -302,6 +304,32 @@
         &-cards{
             display: flex;
             
+            &:nth-child(2){
+
+                & .quest-wrp-cards-img{
+                    background-image: url(../img/quest/kid.png);
+                    background-position: 10px 22px;
+                }
+
+                & .quest-wrp-cards-description{
+                    margin-top: 18px;
+                }
+            }
+            
+
+            &:nth-child(3){
+                & .quest-wrp-cards-img{
+                    background-image: url(../img/quest/brain.png);
+                }
+            }
+
+            &:nth-child(4){
+                & .quest-wrp-cards-img{
+                    background-image: url(../img/quest/emotions.png);
+                }
+            }
+
+
             &-img{
                 background: $white;
                 background-image: url(../img/quest/friends.png);
@@ -313,17 +341,15 @@
                 box-shadow: 0px 4px 9px #DADADA;
                 border-radius: 14px;
                 margin-bottom: 37px;
+
             }
             
             &-description{
-                margin: 0;
-                padding: 0;
                 box-sizing: border-box;
                 @include font(500, 24px, 28.44px);
                 color: $dark;
                 max-width: 401px; 
-                margin-left: 23px;
-                margin-top: 15px;  
+                margin: 30px 0 0 23px; 
             }
         }
 
@@ -333,9 +359,10 @@
 
 //  ====== qestions ================
 .questions {
+    width: 100%;
     background: rgba(245, 245, 245, 0.63);
     border: 1px solid rgba(0, 0, 0, 0.18);
-    box-sizing: border-box;
+    margin: 0;
 
     &-title {
         @include font(500, 44px, 52px);
@@ -408,6 +435,8 @@
 //  ====== reviews ================
 .feedback {
     width: 100%;
+    background-color: $white-light;
+    margin: 0;
 
     &-text {
         display: flex;
