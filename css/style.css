@@ -104,8 +104,6 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
-  z-index: 99;
-  width: 100%;
 }
 
 .header-flx {
@@ -346,10 +344,15 @@ button {
   margin: 0 auto 68px;
   display: block;
   cursor: pointer;
-  -webkit-transition: background-color 1s ease-out, -webkit-transform 600ms ease;
-  transition: background-color 1s ease-out, -webkit-transform 600ms ease;
-  transition: transform 600ms ease, background-color 1s ease-out;
-  transition: transform 600ms ease, background-color 1s ease-out, -webkit-transform 600ms ease;
+  -webkit-transition: background-color 1s ease-out,
+ -webkit-transform 600ms ease;
+  transition: background-color 1s ease-out,
+ -webkit-transform 600ms ease;
+  transition: transform 600ms ease,
+ background-color 1s ease-out;
+  transition: transform 600ms ease,
+ background-color 1s ease-out,
+ -webkit-transform 600ms ease;
 }
 
 .face-btn:hover {
