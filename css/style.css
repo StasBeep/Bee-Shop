@@ -421,14 +421,24 @@ button {
   fill: #FFFFFF;
 }
 
-.qestions {
+.quest-title {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 52px;
+  color: #222528;
+  max-width: 697px;
+}
+
+.questions {
   background: rgba(245, 245, 245, 0.63);
   border: 1px solid rgba(0, 0, 0, 0.18);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.qestions-title {
+.questions-title {
   font-family: rubik;
   font-weight: 500;
   font-style: normal;
@@ -438,18 +448,18 @@ button {
   color: #222528;
 }
 
-.qestions-frequent[open] .qestions-frequent-title:before {
+.questions-frequent[open] .questions-frequent-title:before {
   content: "\2212";
   padding-right: 8px;
   width: 4px;
   height: 4px;
 }
 
-.qestions-frequent:nth-child(7) {
+.questions-frequent:nth-child(7) {
   margin-bottom: 80px;
 }
 
-.qestions-frequent-title {
+.questions-frequent-title {
   font-family: rubik;
   font-weight: 500;
   font-style: normal;
@@ -462,14 +472,14 @@ button {
   margin-bottom: 48px;
 }
 
-.qestions-frequent-title::before {
+.questions-frequent-title::before {
   content: "\002b";
   padding-right: 8px;
   width: 4px;
   height: 4px;
 }
 
-.qestions-frequent-text {
+.questions-frequent-text {
   font-family: rubik;
   font-weight: 400;
   font-style: normal;
@@ -482,7 +492,7 @@ button {
   margin-bottom: 20px;
 }
 
-.qestions-button {
+.questions-button {
   font-family: rubik;
   font-weight: 500;
   font-style: normal;

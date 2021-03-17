@@ -283,9 +283,17 @@
 }
 
 // end ======== face ================ end
+.quest{
+
+    &-title {
+    @include font(500, 44px, 52px);
+    color: $dark;
+    max-width: 697px;
+    }
+}
 
 //  ====== qestions ================
-.qestions {
+.questions {
     background: rgba(245, 245, 245, 0.63);
     border: 1px solid rgba(0, 0, 0, 0.18);
     box-sizing: border-box;
@@ -296,11 +304,11 @@
         color: $dark;
     }
 
-    //  ====== frequen qestions ================
+    //  ====== frequent qestions ================
 
     &-frequent {
         &[open] {
-            & .qestions-frequent-title:before {
+            & .questions-frequent-title:before {
                 content: "\2212";
                 padding-right: 8px;
                 width: 4px;
