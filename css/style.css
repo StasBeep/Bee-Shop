@@ -429,6 +429,54 @@ button {
   line-height: 52px;
   color: #222528;
   max-width: 697px;
+  margin-bottom: 92px;
+}
+
+.quest-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.quest-wrp-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quest-wrp-cards-img {
+  background: #FFFFFF;
+  background-image: url(../img/quest/friends.png);
+  background-repeat: no-repeat;
+  background-position: 11px 10px;
+  width: 140px;
+  height: 140px;
+  background-size: 85%;
+  -webkit-box-shadow: 0px 4px 9px #DADADA;
+          box-shadow: 0px 4px 9px #DADADA;
+  border-radius: 14px;
+  margin-bottom: 37px;
+}
+
+.quest-wrp-cards-description {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28.44px;
+  color: #222528;
+  max-width: 401px;
+  margin-left: 23px;
+  margin-top: 15px;
 }
 
 .questions {
