@@ -265,7 +265,6 @@
 
 // ============ discount =================
 .discount {
-    width: 100%;
     padding-top: 48px;
     padding-bottom: 82px;
     box-sizing: border-box;
@@ -289,7 +288,9 @@
         }
     }
 
-    &-cards {}
+    &-cards {
+        display: flex;
+    }
 
     &-card {
         max-width: 546px;
@@ -306,6 +307,29 @@
             margin-right: 18px;
             background-color: $light-grey;
             border-radius: 10px;
+            position: relative;
+
+            &-percent {
+                @include font(400, 16px, 26px);
+                color: $white-light;
+                position: absolute;
+
+                &:first-child {
+                    top: 5px;
+                    left: 63px;
+                }
+
+                &:nth-child(2) {
+                    @include font(500, 38px, 45px);
+                    top: 34px;
+                    left: 12px;
+                }
+
+                &:last-child {
+                    bottom: 4px;
+                    left: 13px;
+                }
+            }
         }
     }
 }

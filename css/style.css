@@ -438,7 +438,6 @@ button {
 }
 
 .discount {
-  width: 100%;
   padding-top: 48px;
   padding-bottom: 82px;
   -webkit-box-sizing: border-box;
@@ -476,6 +475,12 @@ button {
   text-transform: uppercase;
 }
 
+.discount-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .discount-card {
   max-width: 546px;
   max-height: 194px;
@@ -495,6 +500,37 @@ button {
   margin-right: 18px;
   background-color: #90c1bf;
   border-radius: 10px;
+  position: relative;
+}
+
+.discount-card-img-percent {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FAFAF9;
+  position: absolute;
+}
+
+.discount-card-img-percent:first-child {
+  top: 5px;
+  left: 63px;
+}
+
+.discount-card-img-percent:nth-child(2) {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 45px;
+  top: 34px;
+  left: 12px;
+}
+
+.discount-card-img-percent:last-child {
+  bottom: 4px;
+  left: 13px;
 }
 
 .qestions {
