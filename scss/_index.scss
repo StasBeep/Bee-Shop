@@ -266,7 +266,7 @@
 // ============ discount =================
 .discount {
     padding-top: 48px;
-    padding-bottom: 82px;
+    padding-bottom: 72px;
     box-sizing: border-box;
     background-color: $white-light;
 
@@ -290,18 +290,59 @@
 
     &-cards {
         display: flex;
-        border: 2px solid black;
+
+        // TODO: прячет блоки под блоки!
+        // Спрятать блоки, если не влезают
+        overflow: hidden;
     }
 
     &-card {
-        max-width: 546px;
-        max-height: 194px;
+        min-width: 546px;
+        min-height: 194px;
         padding: 35px;
         background-color: $white;
         border-radius: 14px;
         box-shadow: 0px 4px 9px $gray-shadow;
         display: flex;
         box-sizing: border-box;
+        margin-right: 16px;
+        margin-bottom: 10px;
+        transition: transform 800ms ease;
+        cursor: pointer;
+
+        &:first-child {
+            margin-left: 130px;
+        }
+
+        &:nth-child(2) {
+            & .discount-card-img {
+                background-color: $orange;
+            }
+
+            // TODO: Движение 2 блока, но нужно при помощи js
+            // TODO: к одному предыдущим (одному после) через псевдоклассы и сместить их на -35%
+            &:hover {
+                transform: translateX(-35%);
+                
+                &~ .discount-card:last-child {
+                    transform: translateX(-35%);
+                }
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            & .discount-card-img {
+                background-color: $pink;
+            }
+
+            // TODO: Движение 3 блока, но нужно при помощи js
+            // TODO: к двум предыдущим через псевдоклассы и сместить их на 70%
+            &:hover {
+                transform: translateX(-70%);
+            }
+        }
 
         &-img {
             min-width: 118px;
@@ -323,7 +364,7 @@
 
                 &:nth-child(2) {
                     @include font(500, 38px, 45px);
-                    top: 34px;
+                    top: 39px;
                     left: 12px;
                 }
 
@@ -353,6 +394,7 @@
             &-txt {
                 @include font(400, 16px, 26px);
                 margin: 0;
+                color: $dark;
             }
         }
     }
