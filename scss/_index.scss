@@ -290,6 +290,7 @@
 
     &-cards {
         display: flex;
+        border: 2px solid black;
     }
 
     &-card {
@@ -300,6 +301,7 @@
         border-radius: 14px;
         box-shadow: 0px 4px 9px $gray-shadow;
         display: flex;
+        box-sizing: border-box;
 
         &-img {
             min-width: 118px;
@@ -329,6 +331,28 @@
                     bottom: 4px;
                     left: 13px;
                 }
+            }
+        }
+
+        &-description {
+
+            &-title {
+                display: block;
+                @include font(500, 24px, 28px);
+                color: $pink;
+                max-width: 265px;
+                // Запрет на перенос строк
+                white-space: nowrap;
+                // Обрезаем всё, что не влазит в блок
+                overflow: hidden;
+                // Добавляем многоточие
+                text-overflow: ellipsis;
+                margin-bottom: 19px;
+            }
+
+            &-txt {
+                @include font(400, 16px, 26px);
+                margin: 0;
             }
         }
     }

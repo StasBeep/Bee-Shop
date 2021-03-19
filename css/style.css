@@ -479,6 +479,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 2px solid black;
 }
 
 .discount-card {
@@ -492,6 +493,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .discount-card-img {
@@ -531,6 +534,30 @@ button {
 .discount-card-img-percent:last-child {
   bottom: 4px;
   left: 13px;
+}
+
+.discount-card-description-title {
+  display: block;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #DB4E66;
+  max-width: 265px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 19px;
+}
+
+.discount-card-description-txt {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
 }
 
 .qestions {
