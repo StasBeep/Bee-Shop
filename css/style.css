@@ -97,13 +97,63 @@ button {
     font-size: $fonts;
     line-height: $linehe;
 }*/
+.click-basic-btn {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 18px 92px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #DB4E66;
+  -webkit-box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
+          box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
+  border-radius: 14px;
+  margin: 0 auto 68px;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease-out, color 1s ease-out, -webkit-transform 400ms ease;
+  transition: background-color 1s ease-out, color 1s ease-out, -webkit-transform 400ms ease;
+  transition: transform 400ms ease, background-color 1s ease-out, color 1s ease-out;
+  transition: transform 400ms ease, background-color 1s ease-out, color 1s ease-out, -webkit-transform 400ms ease;
+}
+
+.click-basic-btn:hover {
+  background-color: #B0354A;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #420000;
+}
+
+.click-basic-btn:active {
+  background-color: #DB4E66;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: #FFFFFF;
+}
+
+.click-basic-btn:disabled {
+  background-color: #E8B0B9;
+  color: #F7E6E6;
+}
+
+.click-basic-btn:disabled:hover {
+  background-color: #E8B0B9;
+  color: #F7E6E6;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 /* index */
 .header {
-  background: linear-gradient(92.55deg, #f2b236 32.31%, #ff9c1a 64.34%);
+  background: linear-gradient(92.55deg, #F2B236 32.31%, #ff9c1a 64.34%);
   padding: 42px 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
+  z-index: 99;
+  width: 100%;
 }
 
 .header-flx {
@@ -227,7 +277,7 @@ button {
 }
 
 .header-menu-list-li:hover {
-  background-color: #f2b236;
+  background-color: #F2B236;
 }
 
 .header-menu-list-li:hover .header-menu-list-li-link {
@@ -272,7 +322,7 @@ button {
 }
 
 .header-menu-list-li-hidden-li:hover {
-  background-color: #f2b236;
+  background-color: #F2B236;
 }
 
 .header-menu-list-li-hidden-li:hover .header-menu-list-li-hidden-txt {
@@ -309,7 +359,8 @@ button {
   font-style: normal;
   font-size: 50px;
   line-height: 59px;
-  margin-bottom: 16px;
+  width: 890px;
+  margin: 0 auto 16px;
   text-align: center;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.48);
   color: #FAFAF9;
@@ -326,45 +377,6 @@ button {
   text-align: center;
   color: #FAFAF9;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
-}
-
-.face-btn {
-  font-family: rubik;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 18px 92px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #DB4E66;
-  -webkit-box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
-          box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
-  border-radius: 14px;
-  margin: 0 auto 68px;
-  display: block;
-  cursor: pointer;
-  -webkit-transition: background-color 1s ease-out,
- -webkit-transform 600ms ease;
-  transition: background-color 1s ease-out,
- -webkit-transform 600ms ease;
-  transition: transform 600ms ease,
- background-color 1s ease-out;
-  transition: transform 600ms ease,
- background-color 1s ease-out,
- -webkit-transform 600ms ease;
-}
-
-.face-btn:hover {
-  background-color: #6AC747;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.face-btn:active {
-  background-color: #DB4E66;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .face-messengers {
@@ -423,6 +435,168 @@ button {
 
 .face-messengers-link-svg:active {
   fill: #FFFFFF;
+}
+
+.discount {
+  padding-top: 48px;
+  padding-bottom: 72px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FAFAF9;
+}
+
+.discount-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.discount-up-stocks {
+  display: block;
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5B636B;
+}
+
+.discount-up-link {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #DB4E66;
+  text-transform: uppercase;
+}
+
+.discount-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.discount-card {
+  min-width: 546px;
+  min-height: 194px;
+  padding: 35px;
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  -webkit-box-shadow: 0px 4px 9px #D3D3D3;
+          box-shadow: 0px 4px 9px #D3D3D3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 16px;
+  margin-bottom: 10px;
+  -webkit-transition: -webkit-transform 800ms ease;
+  transition: -webkit-transform 800ms ease;
+  transition: transform 800ms ease;
+  transition: transform 800ms ease, -webkit-transform 800ms ease;
+  cursor: pointer;
+}
+
+.discount-card:first-child {
+  margin-left: 130px;
+}
+
+.discount-card:nth-child(2) .discount-card-img {
+  background-color: #F2B236;
+}
+
+.discount-card:nth-child(2):hover {
+  -webkit-transform: translateX(-35%);
+          transform: translateX(-35%);
+}
+
+.discount-card:nth-child(2):hover ~ .discount-card:last-child {
+  -webkit-transform: translateX(-35%);
+          transform: translateX(-35%);
+}
+
+.discount-card:last-child {
+  margin-right: 0;
+}
+
+.discount-card:last-child .discount-card-img {
+  background-color: #DB4E66;
+}
+
+.discount-card:last-child:hover {
+  -webkit-transform: translateX(-70%);
+          transform: translateX(-70%);
+}
+
+.discount-card-img {
+  min-width: 118px;
+  min-height: 118px;
+  margin-right: 18px;
+  background-color: #90c1bf;
+  border-radius: 10px;
+  position: relative;
+}
+
+.discount-card-img-percent {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FAFAF9;
+  position: absolute;
+}
+
+.discount-card-img-percent:first-child {
+  top: 5px;
+  left: 63px;
+}
+
+.discount-card-img-percent:nth-child(2) {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 45px;
+  top: 39px;
+  left: 12px;
+}
+
+.discount-card-img-percent:last-child {
+  bottom: 4px;
+  left: 13px;
+}
+
+.discount-card-description-title {
+  display: block;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #DB4E66;
+  max-width: 265px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 19px;
+}
+
+.discount-card-description-txt {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  color: #222528;
 }
 
 .qestions {

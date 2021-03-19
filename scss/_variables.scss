@@ -2,34 +2,36 @@
 $wrapper-width: 1440px;
 $wrapper-container-left-right: 138px;
 
-// Переменные цвета текста
+
+// Переменные цвета
 
 $white: #FFFFFF;
 $white-light: #FAFAF9;
+$white-bright: #F7E6E6;
+
+
 
 $brown: #884900;
+$brown-cherry: #420000;
 
-$blush: #DB4E66;
+$pink: #DB4E66;
+$pink-cherry: #B0354A;
+$pink-light: #E8B0B9;
 
 $dark: #222528;
+$black-grey: #222528;
 
 $grey: #A5AAAF;
+$gray-shadow: #D3D3D3;
 $light-grey: #90c1bf;
 $lighter-grey:#CED0D2;
 $dark-grey: #5B636B;
 
-// Переменные цвета фона
-$main-background-one: #f2b236;
+$orange: #F2B236;
 $main-background-two: #ff9c1a;
-$black-grey: #222528;
+
 $peach: #F6D799;
 
-// Переменные окраски svg
-$orange: #F2B236;
-
-$pink: #DB4E66;
-
-$green-comp-eff-pink: #6AC747;
 
 /* === wrapper === */
 /* Обёртки - отдельный блок */
@@ -37,7 +39,7 @@ $green-comp-eff-pink: #6AC747;
     /*Максимальная ширина страницы и выравнивание содержимого по центру*/
     width: $wrapper-width;
     margin: 0 auto;
-    
+
     //Отступы по краям
     &-container {
         padding: 0 $wrapper-container-left-right;

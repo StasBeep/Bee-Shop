@@ -2,7 +2,7 @@
 
 // ========== header ====================
 .header {
-    background: linear-gradient(92.55deg, $main-background-one 32.31%, $main-background-two 64.34%);
+    background: linear-gradient(92.55deg, $orange 32.31%, $main-background-two 64.34%);
     padding: 42px 0 0;
     box-sizing: border-box;
     position: fixed;
@@ -107,7 +107,7 @@
                 }
 
                 &:hover {
-                    background-color: $main-background-one;
+                    background-color: $orange;
 
                     .header-menu-list-li-link {
                         color: $white-light;
@@ -123,7 +123,7 @@
                 &-inp {
                     display: none;
 
-                    &:checked ~ {
+                    &:checked~ {
                         .header-menu-list-li-hidden {
                             display: block;
                         }
@@ -146,7 +146,7 @@
                         box-sizing: border-box;
 
                         &:hover {
-                            background-color: $main-background-one;
+                            background-color: $orange;
 
                             .header-menu-list-li-hidden-txt {
                                 color: $white-light;
@@ -182,7 +182,8 @@
 
     &-title {
         @include font (500, 50px, 59px);
-        margin-bottom: 16px;
+        width: 890px;
+        margin: 0 auto 16px;
         text-align: center;
         text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.48);
         color: $white-light;
@@ -197,30 +198,7 @@
         }
     }
 
-    &-btn {
-        @include font (500, 16px, 19px);
-        padding: 18px 92px;
-        text-transform: uppercase;
-        color: $white;
-        background-color: $pink;
-        box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
-        border-radius: 14px;
-        margin: 0 auto 68px;
-        display: block;
-        cursor: pointer;
-        transition: transform 600ms ease,
-            background-color 1s ease-out;
 
-        &:hover {
-            background-color: $green-comp-eff-pink;
-            transform: scale(1.1);
-        }
-
-        &:active {
-            background-color: $pink;
-            transform: scale(1);
-        }
-    }
 
     &-messengers {
         display: flex;
@@ -250,16 +228,16 @@
 
             &:hover {
                 background: $white;
-    
+
                 & .face-messengers-link-svg {
                     fill: $light-grey;
-    
+
                 }
             }
-    
+
             &:active {
                 background: $light-grey;
-    
+
                 & .face-messengers-link-svg {
                     fill: $white;
                 }
@@ -273,7 +251,7 @@
                 &:hover {
                     fill: $light-grey;
                 }
-    
+
                 &:active {
                     fill: $white;
                 }
@@ -283,6 +261,146 @@
 }
 
 // end ======== face ================ end
+
+
+// ============ discount =================
+.discount {
+    padding-top: 48px;
+    padding-bottom: 72px;
+    box-sizing: border-box;
+    background-color: $white-light;
+
+    &-up {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 38px;
+
+        &-stocks {
+            display: block;
+            @include font(400, 16px, 26px);
+            color: $dark-grey;
+        }
+
+        &-link {
+            @include font(500, 16px, 19px);
+            color: $pink;
+            text-transform: uppercase;
+        }
+    }
+
+    &-cards {
+        display: flex;
+
+        // TODO: прячет блоки под блоки!
+        // Спрятать блоки, если не влезают
+        overflow: hidden;
+    }
+
+    &-card {
+        min-width: 546px;
+        min-height: 194px;
+        padding: 35px;
+        background-color: $white;
+        border-radius: 14px;
+        box-shadow: 0px 4px 9px $gray-shadow;
+        display: flex;
+        box-sizing: border-box;
+        margin-right: 16px;
+        margin-bottom: 10px;
+        transition: transform 800ms ease;
+        cursor: pointer;
+
+        &:first-child {
+            margin-left: 130px;
+        }
+
+        &:nth-child(2) {
+            & .discount-card-img {
+                background-color: $orange;
+            }
+
+            // TODO: Движение 2 блока, но нужно при помощи js
+            // TODO: к одному предыдущим (одному после) через псевдоклассы и сместить их на -35%
+            &:hover {
+                transform: translateX(-35%);
+                
+                &~ .discount-card:last-child {
+                    transform: translateX(-35%);
+                }
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            & .discount-card-img {
+                background-color: $pink;
+            }
+
+            // TODO: Движение 3 блока, но нужно при помощи js
+            // TODO: к двум предыдущим через псевдоклассы и сместить их на 70%
+            &:hover {
+                transform: translateX(-70%);
+            }
+        }
+
+        &-img {
+            min-width: 118px;
+            min-height: 118px;
+            margin-right: 18px;
+            background-color: $light-grey;
+            border-radius: 10px;
+            position: relative;
+
+            &-percent {
+                @include font(400, 16px, 26px);
+                color: $white-light;
+                position: absolute;
+
+                &:first-child {
+                    top: 5px;
+                    left: 63px;
+                }
+
+                &:nth-child(2) {
+                    @include font(500, 38px, 45px);
+                    top: 39px;
+                    left: 12px;
+                }
+
+                &:last-child {
+                    bottom: 4px;
+                    left: 13px;
+                }
+            }
+        }
+
+        &-description {
+
+            &-title {
+                display: block;
+                @include font(500, 24px, 28px);
+                color: $pink;
+                max-width: 265px;
+                // Запрет на перенос строк
+                white-space: nowrap;
+                // Обрезаем всё, что не влазит в блок
+                overflow: hidden;
+                // Добавляем многоточие
+                text-overflow: ellipsis;
+                margin-bottom: 19px;
+            }
+
+            &-txt {
+                @include font(400, 16px, 26px);
+                margin: 0;
+                color: $dark;
+            }
+        }
+    }
+}
+
+// end ======== discount ============= end
 
 //  ====== qestions ================
 .qestions {
@@ -308,9 +426,9 @@
             }
         }
 
-        &:nth-child(7){
+        &:nth-child(7) {
             margin-bottom: 80px;
-        } 
+        }
 
         &-title {
             @include font(500, 30px, 36px);
@@ -337,20 +455,22 @@
             margin-bottom: 20px;
         }
     }
+
     // test
 
     //  ====== Button ================
-        &-button{
-            @include font(500, 16px, 19px);
-            text-transform: uppercase;
-            background: $blush;
-            box-shadow: 2px 4px 9px #FBCCD4;
-            border-radius: 14px;
-            color: $white;
-            padding: 18px 68px;
-            cursor: pointer;
-            margin-bottom: 88px;
-        }
+    &-button {
+        @include font(500, 16px, 19px);
+        text-transform: uppercase;
+        background: $pink;
+        box-shadow: 2px 4px 9px #FBCCD4;
+        border-radius: 14px;
+        color: $white;
+        padding: 18px 68px;
+        cursor: pointer;
+        margin-bottom: 88px;
+    }
+
     //  ====== Button End ================
 
     //  ====== frequen qestions end ================
@@ -382,7 +502,7 @@
         @include font(500, 16px, 19px);
         text-transform: uppercase;
         padding-top: 153px;
-        color: $blush;
+        color: $pink;
     }
 
     &-last {
@@ -430,9 +550,6 @@
                 margin: 36px 0 26px 0;
             }
 
-            &-block {
-            }
-
             &-name {
                 @include font(500, 24px, 28px);
                 margin: 38px 0 0 31px;
@@ -462,6 +579,7 @@
                     color: $main-background-two;
                 }
             }
+
             //  ====== reviews-cards END================
 
             &-text {
@@ -480,7 +598,9 @@
             }
         }
     }
-} //  ====== reviews END ================
+}
+
+//  ====== reviews END ================
 
 // ===============FOOTER=================
 
@@ -631,16 +751,16 @@
 
             &:hover {
                 background: $white;
-    
+
                 & .footer-top-svg {
                     fill: $light-grey;
-    
+
                 }
             }
-    
+
             &:active {
                 background: $light-grey;
-    
+
                 & .footer-top-svg {
                     fill: $white;
                 }
