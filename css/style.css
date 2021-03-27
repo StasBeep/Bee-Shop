@@ -110,7 +110,6 @@ button {
   -webkit-box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
           box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
   border-radius: 14px;
-  margin: 0 auto 68px;
   display: block;
   cursor: pointer;
   -webkit-transition: background-color 1s ease-out, color 1s ease-out, -webkit-transform 400ms ease;
@@ -379,6 +378,10 @@ button {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
 }
 
+.face-btn {
+  margin: 0 auto 68px;
+}
+
 .face-messengers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,6 +605,7 @@ button {
 .quest {
   background-color: #FAFAF9;
   width: 100%;
+  padding-bottom: 120px;
 }
 
 .quest-title {
@@ -676,27 +680,8 @@ button {
   margin: 30px 0 0 23px;
 }
 
-.chat-bot {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.chat-bot-main {
-  width: 276px;
-  height: 96px;
-  border: 1px solid #CED0D2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 4px 9px #D3D3D3;
-          box-shadow: 0px 4px 9px #D3D3D3;
-  border-radius: 64px;
+.quest-btn {
+  margin-top: 58px;
 }
 
 .questions {
@@ -761,20 +746,8 @@ button {
   margin-bottom: 20px;
 }
 
-.questions-button {
-  font-family: rubik;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  background: #DB4E66;
-  -webkit-box-shadow: 2px 4px 9px #FBCCD4;
-          box-shadow: 2px 4px 9px #FBCCD4;
-  border-radius: 14px;
-  color: #FFFFFF;
-  padding: 18px 68px;
-  cursor: pointer;
+.questions .questions-btn {
+  margin: 0;
   margin-bottom: 88px;
 }
 

@@ -198,7 +198,10 @@
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.44);
         }
     }
-
+    
+    &-btn{
+        margin: 0 auto 68px;
+    }
 
 
     &-messengers {
@@ -406,6 +409,7 @@
 .quest{
     background-color: $white-light;
     width: 100%;
+    padding-bottom: 120px;
 
     &-title {
         @include font(500, 44px, 52px);
@@ -472,34 +476,13 @@
         }
 
     }
+
+    &-btn{
+        margin-top: 58px;
+    }
 }
 // end ======== quest ================ end
 
-//  ======== CHAT-BOT ================ 
-
-
-
-.chat-bot{
-    
-    position: sticky;
-    top: 500px;
-    display: flex;
-    justify-content: flex-end ;
-
-    
-    &-main{
-        width: 276px;
-        height: 96px;
-        border: 1px solid #CED0D2;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 9px #D3D3D3;
-        border-radius: 64px;
-        
-        
-    }
-}
-
-// end ======== CHAT-BOT ================ end
 
 
 //  ====== qestions ================
@@ -508,6 +491,7 @@
     background: rgba(245, 245, 245, 0.63);
     border: 1px solid rgba(0, 0, 0, 0.18);
     margin: 0;
+    
 
     &-title {
         @include font(500, 44px, 52px);
@@ -558,18 +542,23 @@
         }
     }
 
-    // test
+    
 
     //  ====== Button ================
-    &-button {
-        @include font(500, 16px, 19px);
-        text-transform: uppercase;
-        background: $pink;
-        box-shadow: 2px 4px 9px #FBCCD4;
-        border-radius: 14px;
-        color: $white;
-        padding: 18px 68px;
-        cursor: pointer;
+    // &-button {
+    //     @include font(500, 16px, 19px);
+    //     text-transform: uppercase;
+    //     background: $pink;
+    //     box-shadow: 2px 4px 9px #FBCCD4;
+    //     border-radius: 14px;
+    //     color: $white;
+    //     padding: 18px 68px;
+    //     cursor: pointer;
+    //     
+    // }
+
+    .questions-btn{
+        margin: 0;
         margin-bottom: 88px;
     }
 
