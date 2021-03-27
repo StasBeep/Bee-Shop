@@ -173,6 +173,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-face.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
 
     &-seccont {
         padding-top: 235px;
@@ -357,6 +358,33 @@
 }
 // end ======== quest ================ end
 
+//  ======== CHAT-BOT ================ 
+
+
+
+.chat-bot{
+    
+    position: sticky;
+    top: 500px;
+    display: flex;
+    justify-content: flex-end ;
+
+    
+    &-main{
+        width: 276px;
+        height: 96px;
+        border: 1px solid #CED0D2;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 9px #D3D3D3;
+        border-radius: 64px;
+        
+        
+    }
+}
+
+// end ======== CHAT-BOT ================ end
+
+
 //  ====== qestions ================
 .questions {
     width: 100%;
@@ -387,6 +415,7 @@
         } 
 
         &-title {
+            display: inline-block;
             @include font(500, 30px, 36px);
             color: $dark;
             list-style-type: none;
