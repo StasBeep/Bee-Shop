@@ -173,6 +173,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background-face.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
 
     &-seccont {
         padding-top: 235px;
@@ -401,12 +402,112 @@
 }
 
 // end ======== discount ============= end
+//  ====== qest =====================
+.quest{
+    background-color: $white-light;
+    width: 100%;
+
+    &-title {
+        @include font(500, 44px, 52px);
+        color: $dark;
+        max-width: 697px;
+        margin-bottom: 92px;
+    }
+    
+    &-wrp{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-cards{
+            display: flex;
+            
+            &:nth-child(2){
+
+                & .quest-wrp-cards-img{
+                    background-image: url(../img/quest/kid.png);
+                    background-position: 10px 22px;
+                }
+
+                & .quest-wrp-cards-description{
+                    margin-top: 18px;
+                }
+            }
+            
+
+            &:nth-child(3){
+                & .quest-wrp-cards-img{
+                    background-image: url(../img/quest/brain.png);
+                }
+            }
+
+            &:nth-child(4){
+                & .quest-wrp-cards-img{
+                    background-image: url(../img/quest/emotions.png);
+                }
+            }
+
+
+            &-img{
+                background: $white;
+                background-image: url(../img/quest/friends.png);
+                background-repeat: no-repeat;
+                background-position: 11px 10px;
+                width: 140px;
+                height: 140px;
+                background-size: 85%;
+                box-shadow: 0px 4px 9px #DADADA;
+                border-radius: 14px;
+                margin-bottom: 37px;
+
+            }
+            
+            &-description{
+                box-sizing: border-box;
+                @include font(500, 24px, 28.44px);
+                color: $dark;
+                max-width: 401px; 
+                margin: 30px 0 0 23px; 
+            }
+        }
+
+    }
+}
+// end ======== quest ================ end
+
+//  ======== CHAT-BOT ================ 
+
+
+
+.chat-bot{
+    
+    position: sticky;
+    top: 500px;
+    display: flex;
+    justify-content: flex-end ;
+
+    
+    &-main{
+        width: 276px;
+        height: 96px;
+        border: 1px solid #CED0D2;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 9px #D3D3D3;
+        border-radius: 64px;
+        
+        
+    }
+}
+
+// end ======== CHAT-BOT ================ end
+
 
 //  ====== qestions ================
-.qestions {
+.questions {
+    width: 100%;
     background: rgba(245, 245, 245, 0.63);
     border: 1px solid rgba(0, 0, 0, 0.18);
-    box-sizing: border-box;
+    margin: 0;
 
     &-title {
         @include font(500, 44px, 52px);
@@ -414,11 +515,11 @@
         color: $dark;
     }
 
-    //  ====== frequen qestions ================
+    //  ====== frequent qestions ================
 
     &-frequent {
         &[open] {
-            & .qestions-frequent-title:before {
+            & .questions-frequent-title:before {
                 content: "\2212";
                 padding-right: 8px;
                 width: 4px;
@@ -431,6 +532,7 @@
         }
 
         &-title {
+            display: inline-block;
             @include font(500, 30px, 36px);
             color: $dark;
             list-style-type: none;
@@ -481,6 +583,8 @@
 //  ====== reviews ================
 .feedback {
     width: 100%;
+    background-color: $white-light;
+    margin: 0;
 
     &-text {
         display: flex;
