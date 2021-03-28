@@ -247,6 +247,8 @@ button {
 
 .header-menu {
   background-color: #FAFAF9;
+  -webkit-box-shadow: 0px 5px 13px #EBE7E0;
+          box-shadow: 0px 5px 13px #EBE7E0;
 }
 
 .header-menu-container {
@@ -671,6 +673,66 @@ button {
   text-transform: uppercase;
   color: #DB4E66;
   margin-top: 33px;
+}
+
+.sect-catalog-cards-card {
+  max-width: 365px;
+  max-height: 711px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 9px #D3D3D3;
+          box-shadow: 0px 4px 9px #D3D3D3;
+  border-radius: 12px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.sect-catalog-cards-card-limit {
+  display: block;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  background-color: #90c1bf;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FAFAF9;
+  max-width: 134px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+.sect-catalog-cards-card-description {
+  display: block;
+  max-height: 42px;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 20px;
+  margin-bottom: 21px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sect-catalog-cards-card-list {
+  margin: 0 0 24px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sect-catalog-cards-card-list-li-svg {
+  fill: #5B636B;
+  margin-right: 16px;
 }
 
 .quest {

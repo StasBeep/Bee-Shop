@@ -86,6 +86,7 @@
 
     &-menu {
         background-color: $white-light;
+        box-shadow: 0px 5px 13px $white-shadow;
 
         &-container {
             padding-right: 225px;
@@ -278,8 +279,6 @@
         box-sizing: border-box;
         box-shadow: 0px 4px 9px #D3D3D3;
         border-radius: 64px;
-
-
     }
 }
 
@@ -432,13 +431,13 @@
     padding: 81px 0 101px;
     box-sizing: border-box;
 
-    &-up{
+    &-up {
         display: flex;
         justify-content: space-between;
         margin-bottom: 90px;
 
-        &-left{
-            &-title{
+        &-left {
+            &-title {
                 @include font(500, 44px, 52px);
                 margin: 0;
                 color: $dark;
@@ -457,6 +456,62 @@
             text-transform: uppercase;
             color: $pink;
             margin-top: 33px;
+        }
+    }
+
+    &-cards {
+
+        &-card {
+            max-width: 365px;
+            max-height: 711px;
+            background: $white;
+            box-shadow: 0px 4px 9px $gray-shadow;
+            border-radius: 12px;
+            padding: 25px;
+            box-sizing: border-box;
+            position: relative;
+
+            &-limit {
+                display: block;
+                @include font(500, 16px, 19px);
+                text-transform: uppercase;
+                background-color: $light-grey;
+                padding: 5px;
+                box-sizing: border-box;
+                color: $white-light;
+                max-width: 134px;
+                text-align: center;
+                border-radius: 6px;
+                position: absolute;
+                top: 25px;
+                right: 30px;
+            }
+
+            &-description {
+                display: block;
+                max-height: 42px;
+                @include font(500, 18px, 21px);
+                margin-top: 20px;
+                margin-bottom: 21px;
+                //? Не понятно как это сделать?
+                //white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &-list {
+                margin: 0 0 24px;
+                padding: 0;
+                box-sizing: border-box;
+
+                &-li{
+                    
+                    &-svg{
+                        fill:$dark-grey;
+                        margin-right: 16px;
+                    }
+                }
+            }
         }
     }
 }
