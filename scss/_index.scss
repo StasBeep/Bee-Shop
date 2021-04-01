@@ -514,6 +514,25 @@
                         fill: $dark-grey;
                         margin-right: 14px;
                         margin-top: 3px;
+
+                        &:hover {
+                            fill: $orange;
+
+                            &~ .sect-catalog-cards-card-list-li-txt {
+                                color: $orange;
+                            }
+                        }
+                    }
+
+                    &-txt {
+                        &:hover {
+                            color: $orange;
+
+                            // TODO: Обращение к верхнему элементу svg, через js
+                            &+ .sect-catalog-cards-card-list-li-svg {
+                                fill: $orange;
+                            }
+                        }
                     }
 
                     &:nth-child(1) {

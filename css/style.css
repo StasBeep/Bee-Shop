@@ -773,6 +773,22 @@ button {
   margin-top: 3px;
 }
 
+.sect-catalog-cards-card-list-li-svg:hover {
+  fill: #F2B236;
+}
+
+.sect-catalog-cards-card-list-li-svg:hover ~ .sect-catalog-cards-card-list-li-txt {
+  color: #F2B236;
+}
+
+.sect-catalog-cards-card-list-li-txt:hover {
+  color: #F2B236;
+}
+
+.sect-catalog-cards-card-list-li-txt:hover + .sect-catalog-cards-card-list-li-svg {
+  fill: #F2B236;
+}
+
 .sect-catalog-cards-card-list-li:nth-child(1) .sect-catalog-cards-card-list-li-svg {
   margin-left: 3px;
   margin-right: 16px;
