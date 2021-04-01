@@ -110,7 +110,7 @@ button {
   -webkit-box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
           box-shadow: 2px 4px 9px rgba(243, 55, 87, 0.42);
   border-radius: 14px;
-  margin: 0 auto 68px;
+  margin: 0 auto;
   display: block;
   cursor: pointer;
   -webkit-transition: background-color 1s ease-out, color 1s ease-out, -webkit-transform 400ms ease;
@@ -141,8 +141,32 @@ button {
 .click-basic-btn:disabled:hover {
   background-color: #E8B0B9;
   color: #F7E6E6;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: none;
+          transform: none;
+}
+
+.click-basic-btn-orange {
+  padding: 18px 62px;
+  background-color: #F2B236;
+  -webkit-box-shadow: 0px 3px 7px #FFE9BF;
+          box-shadow: 0px 3px 7px #FFE9BF;
+}
+
+.click-basic-btn-orange:hover {
+  background-color: #FBB835;
+  color: #865800;
+}
+
+.click-basic-btn-orange:disabled {
+  background-color: #FFDD9B;
+  color: #FBF5EA;
+}
+
+.click-basic-btn-orange:disabled:hover {
+  background-color: #FFDD9B;
+  color: #FBF5EA;
+  -webkit-transform: none;
+          transform: none;
 }
 
 /* index */
@@ -388,6 +412,7 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 68px;
 }
 
 .face-messengers-link {
@@ -677,7 +702,6 @@ button {
 
 .sect-catalog-cards-card {
   max-width: 365px;
-  max-height: 711px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 9px #D3D3D3;
           box-shadow: 0px 4px 9px #D3D3D3;
@@ -730,9 +754,40 @@ button {
           box-sizing: border-box;
 }
 
+.sect-catalog-cards-card-list-li {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5B636B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3px;
+}
+
 .sect-catalog-cards-card-list-li-svg {
   fill: #5B636B;
+  margin-right: 14px;
+  margin-top: 3px;
+}
+
+.sect-catalog-cards-card-list-li:nth-child(1) .sect-catalog-cards-card-list-li-svg {
+  margin-left: 3px;
   margin-right: 16px;
+}
+
+.sect-catalog-cards-card-price {
+  display: block;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #DB4E66;
+  margin-bottom: 24px;
 }
 
 .quest {
