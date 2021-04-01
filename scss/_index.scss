@@ -271,6 +271,8 @@
     top: 850px;
     display: flex;
     justify-content: flex-end;
+    // Данное, для всех окон
+    z-index: 90;
 
 
     &-main {
@@ -461,6 +463,8 @@
     }
 
     &-cards {
+        display: flex;
+        justify-content: space-between;
 
         &-card {
             max-width: 365px;

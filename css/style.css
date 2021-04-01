@@ -474,6 +474,7 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 90;
 }
 
 .chat-bot-main {
@@ -698,6 +699,15 @@ button {
   text-transform: uppercase;
   color: #DB4E66;
   margin-top: 33px;
+}
+
+.sect-catalog-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sect-catalog-cards-card {
