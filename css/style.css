@@ -488,6 +488,8 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
+  -webkit-transition: background-color 1s ease-out, color 1s ease-out;
+  transition: background-color 1s ease-out, color 1s ease-out;
 }
 
 .chat-bot-main:hover {
@@ -512,6 +514,8 @@ button {
   top: 10px;
   left: 13px;
   z-index: 0;
+  -webkit-transition: fill 1s ease-out;
+  transition: fill 1s ease-out;
 }
 
 .chat-bot-main-svg-comma {
@@ -520,6 +524,8 @@ button {
   z-index: 1;
   top: 27px;
   left: 29px;
+  -webkit-transition: fill 1s ease-out;
+  transition: fill 1s ease-out;
 }
 
 .chat-bot-main-question {

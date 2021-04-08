@@ -284,6 +284,8 @@
         position: relative;
         box-sizing: border-box;
         cursor: pointer;
+        transition: background-color 1s ease-out,
+                    color 1s ease-out;
 
         &:hover {
             background-color: $blurred-peach;
@@ -307,6 +309,7 @@
             top: 10px;
             left: 13px;
             z-index: 0;
+            transition: fill 1s ease-out;
 
             &-comma {
                 position: absolute;
@@ -314,6 +317,7 @@
                 z-index: 1;
                 top: 27px;
                 left: 29px;
+                transition: fill 1s ease-out;
             }
         }
 
