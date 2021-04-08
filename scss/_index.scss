@@ -522,7 +522,7 @@
                         &:hover {
                             fill: $orange;
 
-                            &~ .sect-catalog-cards-card-list-li-txt {
+                            &~.sect-catalog-cards-card-list-li-txt {
                                 color: $orange;
                             }
                         }
@@ -533,7 +533,7 @@
                             color: $orange;
 
                             // TODO: Обращение к верхнему элементу svg, через js
-                            &+ .sect-catalog-cards-card-list-li-svg {
+                            &+.sect-catalog-cards-card-list-li-svg {
                                 fill: $orange;
                             }
                         }
@@ -560,6 +560,45 @@
 }
 
 // end ======== sect-catalog ========= end
+
+// ============ vido =====================
+.vido {
+    background-color: $white-light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &-back {
+        padding: 408px 0 331px;
+        box-sizing: border-box;
+        background-image: url(../img/background-child-video.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 72px;
+        position: relative;
+    }
+
+    &-video {
+        display: block;
+        margin: 0 auto;
+
+
+        &-btn {
+            background-color: $fresh-pink;
+            padding: 20px 18px 15px 27px;
+            border-radius: 50%;
+            position: absolute;
+            left: 685px;
+            bottom: 500px;
+
+            &-svg {
+                fill: $white-light;
+            }
+        }
+    }
+}
+
+// end ======== vido ================= end
 
 //  ====== qest =====================
 .quest {

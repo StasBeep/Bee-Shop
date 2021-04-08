@@ -816,6 +816,43 @@ button {
   margin-bottom: 24px;
 }
 
+.vido {
+  background-color: #FAFAF9;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.vido-back {
+  padding: 408px 0 331px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/background-child-video.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 72px;
+  position: relative;
+}
+
+.vido-video {
+  display: block;
+  margin: 0 auto;
+}
+
+.vido-video-btn {
+  background-color: #FF6B6B;
+  padding: 20px 18px 15px 27px;
+  border-radius: 50%;
+  position: absolute;
+  left: 685px;
+  bottom: 500px;
+}
+
+.vido-video-btn-svg {
+  fill: #FAFAF9;
+}
+
 .quest {
   background-color: #FAFAF9;
   width: 100%;
