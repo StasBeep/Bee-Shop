@@ -285,15 +285,32 @@
         box-sizing: border-box;
         cursor: pointer;
 
+        &:hover {
+            background-color: $blurred-peach;
+
+            &> .chat-bot-main-svg {
+                fill: $dark;
+            }
+
+            &> .chat-bot-main-svg-comma {
+                fill: $light-grey;
+            }
+
+            &> .chat-bot-main-question{
+                color: $brown-cherry;
+            }
+        }
+
         &-svg {
             fill: $light-grey;
             position: absolute;
             top: 10px;
             left: 13px;
-            z-index: -1;
+            z-index: 0;
 
             &-comma {
                 position: absolute;
+                fill: $dark;
                 z-index: 1;
                 top: 27px;
                 left: 29px;

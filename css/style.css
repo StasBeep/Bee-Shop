@@ -490,16 +490,33 @@ button {
   cursor: pointer;
 }
 
+.chat-bot-main:hover {
+  background-color: #FFDD9B;
+}
+
+.chat-bot-main:hover > .chat-bot-main-svg {
+  fill: #222528;
+}
+
+.chat-bot-main:hover > .chat-bot-main-svg-comma {
+  fill: #90c1bf;
+}
+
+.chat-bot-main:hover > .chat-bot-main-question {
+  color: #420000;
+}
+
 .chat-bot-main-svg {
   fill: #90c1bf;
   position: absolute;
   top: 10px;
   left: 13px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .chat-bot-main-svg-comma {
   position: absolute;
+  fill: #222528;
   z-index: 1;
   top: 27px;
   left: 29px;
