@@ -272,16 +272,61 @@
     display: flex;
     justify-content: flex-end;
     // Данное, для всех окон
-    z-index: 90;
+    z-index: 50;
 
 
     &-main {
         width: 276px;
         height: 96px;
         border: 1px solid #CED0D2;
-        box-sizing: border-box;
         box-shadow: 0px 4px 9px #D3D3D3;
         border-radius: 64px;
+        position: relative;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: background-color 1s ease-out,
+                    color 1s ease-out;
+
+        &:hover {
+            background-color: $blurred-peach;
+
+            &> .chat-bot-main-svg {
+                fill: $dark;
+            }
+
+            &> .chat-bot-main-svg-comma {
+                fill: $light-grey;
+            }
+
+            &> .chat-bot-main-question{
+                color: $brown-cherry;
+            }
+        }
+
+        &-svg {
+            fill: $light-grey;
+            position: absolute;
+            top: 10px;
+            left: 13px;
+            z-index: 0;
+            transition: fill 1s ease-out;
+
+            &-comma {
+                position: absolute;
+                fill: $dark;
+                z-index: 1;
+                top: 27px;
+                left: 29px;
+                transition: fill 1s ease-out;
+            }
+        }
+
+        &-question {
+            display: block;
+            @include font(400, 16px, 26px);
+            margin-left: 60px;
+            color: $dark;
+        }
     }
 }
 

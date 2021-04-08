@@ -474,18 +474,69 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  z-index: 90;
+  z-index: 50;
 }
 
 .chat-bot-main {
   width: 276px;
   height: 96px;
   border: 1px solid #CED0D2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 9px #D3D3D3;
           box-shadow: 0px 4px 9px #D3D3D3;
   border-radius: 64px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease-out, color 1s ease-out;
+  transition: background-color 1s ease-out, color 1s ease-out;
+}
+
+.chat-bot-main:hover {
+  background-color: #FFDD9B;
+}
+
+.chat-bot-main:hover > .chat-bot-main-svg {
+  fill: #222528;
+}
+
+.chat-bot-main:hover > .chat-bot-main-svg-comma {
+  fill: #90c1bf;
+}
+
+.chat-bot-main:hover > .chat-bot-main-question {
+  color: #420000;
+}
+
+.chat-bot-main-svg {
+  fill: #90c1bf;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  z-index: 0;
+  -webkit-transition: fill 1s ease-out;
+  transition: fill 1s ease-out;
+}
+
+.chat-bot-main-svg-comma {
+  position: absolute;
+  fill: #222528;
+  z-index: 1;
+  top: 27px;
+  left: 29px;
+  -webkit-transition: fill 1s ease-out;
+  transition: fill 1s ease-out;
+}
+
+.chat-bot-main-question {
+  display: block;
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 60px;
+  color: #222528;
 }
 
 .discount {
