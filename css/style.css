@@ -1152,4 +1152,139 @@ button {
   font-size: 16px;
   line-height: 160%;
 }
+
+main {
+  background-color: #FAFAF9;
+}
+
+.navigation {
+  margin-top: 208px;
+  color: #A5AAAF;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation-link {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #A5AAAF;
+}
+
+.navigation-arrow {
+  margin: 0 13px;
+}
+
+.line {
+  border: 1px solid #A5AAAF;
+}
+
+.catalog-text {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 52px;
+  color: #222528;
+  margin: 77px 0 82px;
+}
+
+.catalog-filter {
+  margin: 0;
+  padding: 0;
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #A5AAAF;
+  display: inline-block;
+}
+
+.catalog-clear {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #5B636B;
+  margin-left: 95px;
+  cursor: pointer;
+}
+
+.catalog-clear:hover {
+  font-family: rubik;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.catalog-search {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  width: 465px;
+  background: #FFFFFF;
+  border-radius: 28px;
+  position: relative;
+  border: 1px solid #CED0D2;
+  padding: 14px 0 13px 20px;
+  margin-left: 35px;
+}
+
+.catalog-search-input {
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #A5AAAF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  border: none;
+  width: 425px;
+}
+
+.catalog-search-button {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  fill: #a5aaaf;
+}
+
+.catalog-search-button:hover {
+  cursor: pointer;
+  fill: #5e6164;
+}
+
+.catalog-input {
+  display: inline-block;
+  width: 265px;
+  background: #FAFAF9;
+  border: 1px solid #CED0D2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 26px;
+  margin-left: 105px;
+  padding: 14px 0 13px 20px;
+  font-family: rubik;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #DB4E66;
+  outline: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.catalog-arrow {
+  fill: none;
+  stroke: #5B636B;
+  margin-left: 40px;
+}
 /*# sourceMappingURL=style.css.map */
